@@ -25,8 +25,10 @@ the list of requirements are:
 and following that list i have fulfilled the needed job to do:
 
 ## Process
+
 I kinda had a bit of experience with .Net Maui and made an android app with a Local Database that also includes some of the requirements like: CRUD, DataAnnotation etc. from the projects like: android app development with its local database [Link🔗](https://github.com/K0d0ku/cloud_app_dev_exam_project) and making simple api in .Net Core Web API with database integration and user's permission to certain types of data [Link🔗](https://github.com/K0d0ku/web-serv_midterm1/blob/master/%23images_and_files/the_process.md)  
 
+### Idea
 I took the inspiration and idea from my [.Net B2B2C app](https://github.com/K0d0ku/cloud_app_dev_exam_project), [Postgres Mustream database](https://github.com/K0d0ku/mustream) and [.Net Core Web Api project](https://github.com/K0d0ku/web-serv_midterm1), and used some of their functions in this project.  
 The idea is simple, make an api with several roles with `RBAC` for certain data and api endpoints, and mainaining it all with simple data validation and dto to keep the implementation clean.
 for the idea / purpose i reused the idea from my Postgres Mustream Database and B2B2C Maui app projects, which also has RBAC, and thought of something like the following:
