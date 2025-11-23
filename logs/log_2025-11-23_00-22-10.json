@@ -1,0 +1,175 @@
+{
+  "level": "info",
+  "time": "2025-11-23T00:22:10+05:00",
+  "message": "Zerolog initialized"
+}
+{
+  "level": "info",
+  "event": "AppStartup",
+  "userId": "",
+  "role": "",
+  "status": "info",
+  "message": "Initializing application",
+  "time": "2025-11-23T00:22:10+05:00",
+  "message": "AppStartup"
+}
+{
+  "level": "info",
+  "event": "EnvLoad",
+  "userId": "",
+  "role": "",
+  "status": "info",
+  "message": ".env loaded successfully",
+  "time": "2025-11-23T00:22:10+05:00",
+  "message": "EnvLoad"
+}
+{
+  "level": "info",
+  "event": "DBConnect",
+  "userId": "",
+  "role": "",
+  "status": "info",
+  "message": "Database connection established",
+  "time": "2025-11-23T00:22:10+05:00",
+  "message": "DBConnect"
+}
+{
+  "level": "info",
+  "event": "SeedAdmin",
+  "userId": "",
+  "role": "",
+  "status": "info",
+  "message": "Admin user ensured",
+  "time": "2025-11-23T00:22:10+05:00",
+  "message": "SeedAdmin"
+}
+{
+  "level": "info",
+  "event": "ServerStart",
+  "userId": "",
+  "role": "",
+  "status": "info",
+  "port": 8080,
+  "time": "2025-11-23T00:22:10+05:00",
+  "message": "ServerStart"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/swagger/index.html",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 0.9954,
+  "time": "2025-11-23T00:22:21+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/swagger-ui.css",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 2.0023,
+  "time": "2025-11-23T00:22:21+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/swagger-ui-standalone-preset.js",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 29.5292,
+  "time": "2025-11-23T00:22:21+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/swagger-ui-bundle.js",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 65.2531,
+  "time": "2025-11-23T00:22:21+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/swagger/doc.json",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 3.5259,
+  "time": "2025-11-23T00:22:22+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/favicon-32x32.png",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 0,
+  "time": "2025-11-23T00:22:22+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/swagger/index.html",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 1.0253,
+  "time": "2025-11-23T00:22:51+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/swagger-ui-bundle.js",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 1.9981,
+  "time": "2025-11-23T00:22:51+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/swagger-ui.css",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 24.9987,
+  "time": "2025-11-23T00:22:51+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/swagger-ui-standalone-preset.js",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 17.9987,
+  "time": "2025-11-23T00:22:51+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/swagger/doc.json",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 2.0006,
+  "time": "2025-11-23T00:22:51+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/favicon-32x32.png",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 0,
+  "time": "2025-11-23T00:22:51+05:00",
+  "message": "Request completed"
+}

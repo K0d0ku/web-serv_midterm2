@@ -1,0 +1,277 @@
+{
+  "level": "info",
+  "time": "2025-11-23T15:22:43+05:00",
+  "message": "Zerolog initialized"
+}
+{
+  "level": "info",
+  "event": "AppStartup",
+  "userId": "",
+  "role": "",
+  "status": "info",
+  "message": "Initializing application",
+  "time": "2025-11-23T15:22:43+05:00",
+  "message": "AppStartup"
+}
+{
+  "level": "info",
+  "event": "EnvLoad",
+  "userId": "",
+  "role": "",
+  "status": "info",
+  "message": ".env loaded successfully",
+  "time": "2025-11-23T15:22:43+05:00",
+  "message": "EnvLoad"
+}
+{
+  "level": "info",
+  "event": "DBConnect",
+  "userId": "",
+  "role": "",
+  "status": "info",
+  "message": "Database connection established",
+  "time": "2025-11-23T15:22:44+05:00",
+  "message": "DBConnect"
+}
+{
+  "level": "info",
+  "event": "SeedAdmin",
+  "userId": "",
+  "role": "",
+  "status": "info",
+  "message": "Admin user ensured",
+  "time": "2025-11-23T15:22:44+05:00",
+  "message": "SeedAdmin"
+}
+{
+  "level": "info",
+  "event": "ServerStart",
+  "userId": "",
+  "role": "",
+  "status": "info",
+  "port": 8080,
+  "time": "2025-11-23T15:22:44+05:00",
+  "message": "ServerStart"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/swagger/index.html",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 1.1057,
+  "time": "2025-11-23T15:41:05+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/swagger-ui-standalone-preset.js",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 0.9978,
+  "time": "2025-11-23T15:41:06+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/swagger-ui.css",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 18.1481,
+  "time": "2025-11-23T15:41:06+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/swagger-ui-bundle.js",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 37.1715,
+  "time": "2025-11-23T15:41:06+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/favicon-32x32.png",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 0,
+  "time": "2025-11-23T15:41:06+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/swagger/doc.json",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 0.5951,
+  "time": "2025-11-23T15:41:06+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "UserLogin",
+  "userId": "bcc13472-5dd0-4a5b-bd2f-67aacce5e39c",
+  "role": "Artist",
+  "status": "success",
+  "email": "john@example.com",
+  "time": "2025-11-23T15:45:58+05:00",
+  "message": "UserLogin"
+}
+{
+  "level": "info",
+  "method": "POST",
+  "path": "/login",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 85.714,
+  "time": "2025-11-23T15:45:58+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "GetAllGenres",
+  "userId": "",
+  "role": "",
+  "status": "success",
+  "count": 10,
+  "time": "2025-11-23T15:46:17+05:00",
+  "message": "GetAllGenres"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/genres",
+  "user_id": "bcc13472-5dd0-4a5b-bd2f-67aacce5e39c",
+  "role": "Artist",
+  "duration_ms": 17.892,
+  "time": "2025-11-23T15:46:17+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "GetAllGenres",
+  "userId": "",
+  "role": "",
+  "status": "success",
+  "count": 10,
+  "time": "2025-11-23T15:46:18+05:00",
+  "message": "GetAllGenres"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/genres",
+  "user_id": "bcc13472-5dd0-4a5b-bd2f-67aacce5e39c",
+  "role": "Artist",
+  "duration_ms": 4.2719,
+  "time": "2025-11-23T15:46:18+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "GetGenreByID",
+  "userId": "",
+  "role": "",
+  "status": "success",
+  "id": "7596ac84-75f7-4e0d-b65d-816b354c9127",
+  "time": "2025-11-23T15:47:39+05:00",
+  "message": "GetGenreByID"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/genres/7596ac84-75f7-4e0d-b65d-816b354c9127",
+  "user_id": "bcc13472-5dd0-4a5b-bd2f-67aacce5e39c",
+  "role": "Artist",
+  "duration_ms": 11.1901,
+  "time": "2025-11-23T15:47:39+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "CreateMusic",
+  "userId": "bcc13472-5dd0-4a5b-bd2f-67aacce5e39c",
+  "role": "Artist",
+  "status": "success",
+  "musicId": "372f4e74-a2dd-4ca1-8889-0b9ad744b281",
+  "title": "Midnight Skyline",
+  "time": "2025-11-23T15:51:13+05:00",
+  "message": "CreateMusic"
+}
+{
+  "level": "info",
+  "method": "POST",
+  "path": "/music",
+  "user_id": "bcc13472-5dd0-4a5b-bd2f-67aacce5e39c",
+  "role": "Artist",
+  "duration_ms": 48.7866,
+  "time": "2025-11-23T15:51:13+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "UpdateMusic",
+  "userId": "bcc13472-5dd0-4a5b-bd2f-67aacce5e39c",
+  "role": "Artist",
+  "status": "success",
+  "musicId": "372f4e74-a2dd-4ca1-8889-0b9ad744b281",
+  "time": "2025-11-23T15:56:21+05:00",
+  "message": "UpdateMusic"
+}
+{
+  "level": "info",
+  "method": "PUT",
+  "path": "/music/372f4e74-a2dd-4ca1-8889-0b9ad744b281",
+  "user_id": "bcc13472-5dd0-4a5b-bd2f-67aacce5e39c",
+  "role": "Artist",
+  "duration_ms": 46.7862,
+  "time": "2025-11-23T15:56:21+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "UserLogin",
+  "userId": "e9317a12-1862-468e-81ea-221452936fba",
+  "role": "Artist",
+  "status": "success",
+  "email": "deez@example.com",
+  "time": "2025-11-23T15:59:16+05:00",
+  "message": "UserLogin"
+}
+{
+  "level": "info",
+  "method": "POST",
+  "path": "/login",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 98.6331,
+  "time": "2025-11-23T15:59:16+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "UpdateMusic",
+  "userId": "e9317a12-1862-468e-81ea-221452936fba",
+  "role": "Artist",
+  "status": "failed",
+  "error": "artists can only update their own music",
+  "musicId": "372f4e74-a2dd-4ca1-8889-0b9ad744b281",
+  "time": "2025-11-23T15:59:42+05:00",
+  "message": "UpdateMusic"
+}
+{
+  "level": "info",
+  "method": "PUT",
+  "path": "/music/372f4e74-a2dd-4ca1-8889-0b9ad744b281",
+  "user_id": "e9317a12-1862-468e-81ea-221452936fba",
+  "role": "Artist",
+  "duration_ms": 24.2054,
+  "time": "2025-11-23T15:59:42+05:00",
+  "message": "Request completed"
+}

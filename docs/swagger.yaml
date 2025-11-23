@@ -1,0 +1,678 @@
+basePath: /
+definitions:
+  dto.CreateGenreRequest:
+    properties:
+      description:
+        maxLength: 255
+        type: string
+      name:
+        maxLength: 50
+        minLength: 2
+        type: string
+    required:
+    - name
+    type: object
+  dto.CreateMusicRequest:
+    properties:
+      description:
+        maxLength: 255
+        type: string
+      file_url:
+        type: string
+      genre_id:
+        type: string
+      title:
+        maxLength: 100
+        minLength: 2
+        type: string
+    required:
+    - file_url
+    - genre_id
+    - title
+    type: object
+  dto.LoginRequest:
+    properties:
+      email:
+        type: string
+      password:
+        type: string
+    required:
+    - email
+    - password
+    type: object
+  dto.RegisterUserRequest:
+    properties:
+      email:
+        type: string
+      name:
+        maxLength: 100
+        minLength: 2
+        type: string
+      password:
+        minLength: 6
+        type: string
+      role:
+        enum:
+        - Artist
+        - Listener
+        type: string
+    required:
+    - email
+    - name
+    - password
+    - role
+    type: object
+  dto.UpdateGenreRequest:
+    properties:
+      description:
+        maxLength: 255
+        type: string
+      name:
+        maxLength: 50
+        minLength: 2
+        type: string
+    type: object
+  dto.UpdateMusicRequest:
+    properties:
+      description:
+        maxLength: 255
+        type: string
+      file_url:
+        type: string
+      genre_id:
+        type: string
+      title:
+        maxLength: 100
+        minLength: 2
+        type: string
+    type: object
+  dto.UpdateUserRequest:
+    properties:
+      email:
+        type: string
+      name:
+        maxLength: 100
+        minLength: 2
+        type: string
+      password:
+        minLength: 6
+        type: string
+    type: object
+  models.Genre:
+    properties:
+      description:
+        maxLength: 255
+        type: string
+      id:
+        type: string
+      music:
+        items:
+          $ref: '#/definitions/models.Music'
+        type: array
+      name:
+        maxLength: 50
+        minLength: 2
+        type: string
+    required:
+    - name
+    type: object
+  models.Music:
+    properties:
+      artist:
+        $ref: '#/definitions/models.User'
+      artistID:
+        type: string
+      createdAt:
+        type: string
+      description:
+        maxLength: 255
+        type: string
+      fileURL:
+        type: string
+      genre:
+        $ref: '#/definitions/models.Genre'
+      genreID:
+        type: string
+      id:
+        type: string
+      title:
+        maxLength: 100
+        minLength: 2
+        type: string
+    required:
+    - fileURL
+    - title
+    type: object
+  models.User:
+    properties:
+      createdAt:
+        type: string
+      email:
+        type: string
+      id:
+        type: string
+      name:
+        maxLength: 100
+        minLength: 2
+        type: string
+      password:
+        minLength: 6
+        type: string
+      role:
+        allOf:
+        - $ref: '#/definitions/models.UserRole'
+        enum:
+        - Admin
+        - Artist
+        - Listener
+      updatedAt:
+        type: string
+      uploadedMusic:
+        items:
+          $ref: '#/definitions/models.Music'
+        type: array
+    required:
+    - email
+    - name
+    - password
+    - role
+    type: object
+  models.UserRole:
+    enum:
+    - Admin
+    - Artist
+    - Listener
+    type: string
+    x-enum-varnames:
+    - RoleAdmin
+    - RoleArtist
+    - RoleListener
+host: localhost:8080
+info:
+  contact: {}
+  description: Music API with Users, Genres, and JWT authentication, UPDATE i tried
+    sorting endpoints without editing auto generated swagger files it didnt worked
+  title: Midterm2 Music API
+  version: "1.0"
+paths:
+  /genres:
+    get:
+      description: Fetches all music genres
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/models.Genre'
+            type: array
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties: true
+            type: object
+      security:
+      - ApiKeyAuth: []
+      summary: Get all genres
+      tags:
+      - 4Genres
+    post:
+      consumes:
+      - application/json
+      description: Only Admins can create genres
+      parameters:
+      - description: Create Genre Request
+        in: body
+        name: genre
+        required: true
+        schema:
+          $ref: '#/definitions/dto.CreateGenreRequest'
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Created
+          schema:
+            $ref: '#/definitions/models.Genre'
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties: true
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties: true
+            type: object
+      security:
+      - ApiKeyAuth: []
+      summary: Create a new genre
+      tags:
+      - 4Genres
+  /genres/{id}:
+    delete:
+      description: Deletes a genre by ID
+      parameters:
+      - description: Genre ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties: true
+            type: object
+      security:
+      - ApiKeyAuth: []
+      summary: Delete a genre
+      tags:
+      - 4Genres
+    get:
+      description: Fetches a genre by its ID
+      parameters:
+      - description: Genre ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.Genre'
+        "404":
+          description: Not Found
+          schema:
+            additionalProperties: true
+            type: object
+      security:
+      - ApiKeyAuth: []
+      summary: Get genre by ID
+      tags:
+      - 4Genres
+    put:
+      consumes:
+      - application/json
+      description: Updates a genre by ID
+      parameters:
+      - description: Genre ID
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Update Genre Request
+        in: body
+        name: genre
+        required: true
+        schema:
+          $ref: '#/definitions/dto.UpdateGenreRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.Genre'
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties: true
+            type: object
+        "404":
+          description: Not Found
+          schema:
+            additionalProperties: true
+            type: object
+      security:
+      - ApiKeyAuth: []
+      summary: Update a genre
+      tags:
+      - 4Genres
+  /login:
+    post:
+      consumes:
+      - application/json
+      description: Authenticate user and return JWT token
+      parameters:
+      - description: Login credentials
+        in: body
+        name: login
+        required: true
+        schema:
+          $ref: '#/definitions/dto.LoginRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            additionalProperties: true
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties: true
+            type: object
+        "401":
+          description: Unauthorized
+          schema:
+            additionalProperties: true
+            type: object
+      summary: Login user
+      tags:
+      - 1Auth
+  /music:
+    get:
+      description: Fetch all music tracks
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/models.Music'
+            type: array
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties: true
+            type: object
+      security:
+      - ApiKeyAuth: []
+      summary: Get all music
+      tags:
+      - 3Music
+    post:
+      consumes:
+      - application/json
+      description: Only Artists or Admins can create music
+      parameters:
+      - description: Create Music Request
+        in: body
+        name: music
+        required: true
+        schema:
+          $ref: '#/definitions/dto.CreateMusicRequest'
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Created
+          schema:
+            $ref: '#/definitions/models.Music'
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties: true
+            type: object
+        "403":
+          description: Forbidden
+          schema:
+            additionalProperties: true
+            type: object
+      security:
+      - ApiKeyAuth: []
+      summary: Create new music
+      tags:
+      - 3Music
+  /music/{id}:
+    delete:
+      description: Deletes a music track by ID
+      parameters:
+      - description: Music ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "403":
+          description: Forbidden
+          schema:
+            additionalProperties: true
+            type: object
+      security:
+      - ApiKeyAuth: []
+      summary: Delete music
+      tags:
+      - 3Music
+    get:
+      description: Fetch a music track by ID
+      parameters:
+      - description: Music ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.Music'
+        "404":
+          description: Not Found
+          schema:
+            additionalProperties: true
+            type: object
+      security:
+      - ApiKeyAuth: []
+      summary: Get music by ID
+      tags:
+      - 3Music
+    put:
+      consumes:
+      - application/json
+      description: Update a music track by ID
+      parameters:
+      - description: Music ID
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Update Music Request
+        in: body
+        name: music
+        required: true
+        schema:
+          $ref: '#/definitions/dto.UpdateMusicRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.Music'
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties: true
+            type: object
+        "403":
+          description: Forbidden
+          schema:
+            additionalProperties: true
+            type: object
+        "404":
+          description: Not Found
+          schema:
+            additionalProperties: true
+            type: object
+      security:
+      - ApiKeyAuth: []
+      summary: Update music
+      tags:
+      - 3Music
+  /register:
+    post:
+      consumes:
+      - application/json
+      description: Create a new user account. Only Artist and Listener roles allowed.
+      parameters:
+      - description: User registration payload
+        in: body
+        name: register
+        required: true
+        schema:
+          $ref: '#/definitions/dto.RegisterUserRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            additionalProperties: true
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties: true
+            type: object
+      summary: Register a new user
+      tags:
+      - 1Auth
+  /users:
+    get:
+      description: List all users (Admin only)
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/models.User'
+            type: array
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties: true
+            type: object
+      security:
+      - ApiKeyAuth: []
+      summary: Get all users
+      tags:
+      - 2Users
+  /users/{id}:
+    delete:
+      description: Delete a user. Admin only.
+      parameters:
+      - description: User ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            additionalProperties: true
+            type: object
+        "403":
+          description: Forbidden
+          schema:
+            additionalProperties: true
+            type: object
+      security:
+      - ApiKeyAuth: []
+      summary: Delete user
+      tags:
+      - 2Users
+    get:
+      description: Fetch a single user by ID. Admin or self only.
+      parameters:
+      - description: User ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.User'
+        "403":
+          description: Forbidden
+          schema:
+            additionalProperties: true
+            type: object
+        "404":
+          description: Not Found
+          schema:
+            additionalProperties: true
+            type: object
+      security:
+      - ApiKeyAuth: []
+      summary: Get user by ID
+      tags:
+      - 2Users
+    put:
+      consumes:
+      - application/json
+      description: Update user info. Admin or self only.
+      parameters:
+      - description: User ID
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: User update payload
+        in: body
+        name: update
+        required: true
+        schema:
+          $ref: '#/definitions/dto.UpdateUserRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.User'
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties: true
+            type: object
+        "403":
+          description: Forbidden
+          schema:
+            additionalProperties: true
+            type: object
+      security:
+      - ApiKeyAuth: []
+      summary: Update user
+      tags:
+      - 2Users
+securityDefinitions:
+  ApiKeyAuth:
+    in: header
+    name: Authorization
+    type: apiKey
+swagger: "2.0"

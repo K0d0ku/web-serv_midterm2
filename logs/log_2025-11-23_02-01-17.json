@@ -1,0 +1,717 @@
+{
+  "level": "info",
+  "time": "2025-11-23T02:01:17+05:00",
+  "message": "Log rotated due to hour change"
+}
+{
+  "level": "info",
+  "event": "UserRegister",
+  "userId": "23483ffb-db6a-4836-be8d-24e1cc857cfd",
+  "role": "Artist",
+  "status": "success",
+  "email": "jane@example.com",
+  "time": "2025-11-23T02:01:17+05:00",
+  "message": "UserRegister"
+}
+{
+  "level": "info",
+  "method": "POST",
+  "path": "/register",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 139.8723,
+  "time": "2025-11-23T02:01:17+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "UserRegister",
+  "userId": "e9317a12-1862-468e-81ea-221452936fba",
+  "role": "Artist",
+  "status": "success",
+  "email": "deez@example.com",
+  "time": "2025-11-23T02:10:36+05:00",
+  "message": "UserRegister"
+}
+{
+  "level": "info",
+  "method": "POST",
+  "path": "/register",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 110.83,
+  "time": "2025-11-23T02:10:36+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "POST",
+  "path": "/login",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 0.9996,
+  "time": "2025-11-23T02:12:58+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "UserLogin",
+  "userId": "23483ffb-db6a-4836-be8d-24e1cc857cfd",
+  "role": "Artist",
+  "status": "success",
+  "email": "jane@example.com",
+  "time": "2025-11-23T02:13:23+05:00",
+  "message": "UserLogin"
+}
+{
+  "level": "info",
+  "method": "POST",
+  "path": "/login",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 422.6784,
+  "time": "2025-11-23T02:13:23+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "UserLogin",
+  "userId": "23483ffb-db6a-4836-be8d-24e1cc857cfd",
+  "role": "Artist",
+  "status": "success",
+  "email": "jane@example.com",
+  "time": "2025-11-23T02:15:25+05:00",
+  "message": "UserLogin"
+}
+{
+  "level": "info",
+  "method": "POST",
+  "path": "/login",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 97.6491,
+  "time": "2025-11-23T02:15:25+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/users/23483ffb-db6a-4836-be8d-24e1cc857cfd",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 2.0019,
+  "time": "2025-11-23T02:18:18+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/users/23483ffb-db6a-4836-be8d-24e1cc857cfd",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 0,
+  "time": "2025-11-23T02:19:26+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/users/23483ffb-db6a-4836-be8d-24e1cc857cfd",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 0,
+  "time": "2025-11-23T02:19:44+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "GetUserByID",
+  "userId": "23483ffb-db6a-4836-be8d-24e1cc857cfd",
+  "role": "Artist",
+  "status": "success",
+  "id": "23483ffb-db6a-4836-be8d-24e1cc857cfd",
+  "time": "2025-11-23T02:20:37+05:00",
+  "message": "GetUserByID"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/users/23483ffb-db6a-4836-be8d-24e1cc857cfd",
+  "user_id": "23483ffb-db6a-4836-be8d-24e1cc857cfd",
+  "role": "Artist",
+  "duration_ms": 31.383,
+  "time": "2025-11-23T02:20:37+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/users",
+  "user_id": "23483ffb-db6a-4836-be8d-24e1cc857cfd",
+  "role": "Artist",
+  "duration_ms": 53.2012,
+  "time": "2025-11-23T02:21:37+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "UpdateUser",
+  "userId": "23483ffb-db6a-4836-be8d-24e1cc857cfd",
+  "role": "Artist",
+  "status": "success",
+  "updatedId": "23483ffb-db6a-4836-be8d-24e1cc857cfd",
+  "time": "2025-11-23T02:24:06+05:00",
+  "message": "UpdateUser"
+}
+{
+  "level": "info",
+  "method": "PUT",
+  "path": "/users/23483ffb-db6a-4836-be8d-24e1cc857cfd",
+  "user_id": "23483ffb-db6a-4836-be8d-24e1cc857cfd",
+  "role": "Artist",
+  "duration_ms": 180.8665,
+  "time": "2025-11-23T02:24:06+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "PUT",
+  "path": "/users/23483ffb-db6a-4836-be8d-24e1cc857cfd",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 1.0269,
+  "time": "2025-11-23T02:26:48+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "PUT",
+  "path": "/users/e9317a12-1862-468e-81ea-221452936fba",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 1.1276,
+  "time": "2025-11-23T02:27:42+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "DELETE",
+  "path": "/users/23483ffb-db6a-4836-be8d-24e1cc857cfd",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 0,
+  "time": "2025-11-23T02:28:03+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "DELETE",
+  "path": "/users/bcc13472-5dd0-4a5b-bd2f-67aacce5e39c",
+  "user_id": "23483ffb-db6a-4836-be8d-24e1cc857cfd",
+  "role": "Artist",
+  "duration_ms": 2.1225,
+  "time": "2025-11-23T02:30:02+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "DELETE",
+  "path": "/users/23483ffb-db6a-4836-be8d-24e1cc857cfd",
+  "user_id": "23483ffb-db6a-4836-be8d-24e1cc857cfd",
+  "role": "Artist",
+  "duration_ms": 1.1362,
+  "time": "2025-11-23T02:32:59+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "DELETE",
+  "path": "/users/23483ffb-db6a-4836-be8d-24e1cc857cfd",
+  "user_id": "23483ffb-db6a-4836-be8d-24e1cc857cfd",
+  "role": "Artist",
+  "duration_ms": 7.8153,
+  "time": "2025-11-23T02:33:13+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "UserLogin",
+  "userId": "",
+  "role": "",
+  "status": "failed",
+  "email": "admin@example.com",
+  "error": "invalid credentials",
+  "time": "2025-11-23T02:34:07+05:00",
+  "message": "UserLogin"
+}
+{
+  "level": "info",
+  "method": "POST",
+  "path": "/login",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 148.9684,
+  "time": "2025-11-23T02:34:07+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "UserLogin",
+  "userId": "193a443d-0df8-4b1b-adfd-8fdc16f8a3a5",
+  "role": "Admin",
+  "status": "success",
+  "email": "admin@example.com",
+  "time": "2025-11-23T02:34:15+05:00",
+  "message": "UserLogin"
+}
+{
+  "level": "info",
+  "method": "POST",
+  "path": "/login",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 132.1232,
+  "time": "2025-11-23T02:34:15+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "DeleteUser",
+  "userId": "193a443d-0df8-4b1b-adfd-8fdc16f8a3a5",
+  "role": "Admin",
+  "status": "success",
+  "deletedId": "23483ffb-db6a-4836-be8d-24e1cc857cfd",
+  "time": "2025-11-23T02:34:39+05:00",
+  "message": "DeleteUser"
+}
+{
+  "level": "info",
+  "method": "DELETE",
+  "path": "/users/23483ffb-db6a-4836-be8d-24e1cc857cfd",
+  "user_id": "193a443d-0df8-4b1b-adfd-8fdc16f8a3a5",
+  "role": "Admin",
+  "duration_ms": 58.5346,
+  "time": "2025-11-23T02:34:39+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "ListAllUsers",
+  "userId": "",
+  "role": "",
+  "status": "success",
+  "count": 3,
+  "time": "2025-11-23T02:36:46+05:00",
+  "message": "ListAllUsers"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/users",
+  "user_id": "193a443d-0df8-4b1b-adfd-8fdc16f8a3a5",
+  "role": "Admin",
+  "duration_ms": 2.9823,
+  "time": "2025-11-23T02:36:46+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/swagger/index.html",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 3.1233,
+  "time": "2025-11-23T02:40:33+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/swagger-ui-bundle.js",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 4.9993,
+  "time": "2025-11-23T02:40:33+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/swagger-ui.css",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 0.9922,
+  "time": "2025-11-23T02:40:33+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/swagger-ui-standalone-preset.js",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 0.9922,
+  "time": "2025-11-23T02:40:33+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/swagger/doc.json",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 1.4477,
+  "time": "2025-11-23T02:40:34+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/favicon-32x32.png",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 1.5271,
+  "time": "2025-11-23T02:40:34+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "UserLogin",
+  "userId": "bcc13472-5dd0-4a5b-bd2f-67aacce5e39c",
+  "role": "Artist",
+  "status": "success",
+  "email": "john@example.com",
+  "time": "2025-11-23T02:40:58+05:00",
+  "message": "UserLogin"
+}
+{
+  "level": "info",
+  "method": "POST",
+  "path": "/login",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 113.0091,
+  "time": "2025-11-23T02:40:58+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/genres",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 0,
+  "time": "2025-11-23T02:41:32+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "UserLogin",
+  "userId": "193a443d-0df8-4b1b-adfd-8fdc16f8a3a5",
+  "role": "Admin",
+  "status": "success",
+  "email": "admin@example.com",
+  "time": "2025-11-23T02:42:58+05:00",
+  "message": "UserLogin"
+}
+{
+  "level": "info",
+  "method": "POST",
+  "path": "/login",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 179.6632,
+  "time": "2025-11-23T02:42:58+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "CreateGenre",
+  "userId": "",
+  "role": "",
+  "status": "success",
+  "genreId": "f59238eb-f069-4ab5-830b-1b3e65483a18",
+  "name": "Rock",
+  "time": "2025-11-23T02:43:42+05:00",
+  "message": "CreateGenre"
+}
+{
+  "level": "info",
+  "method": "POST",
+  "path": "/genres",
+  "user_id": "193a443d-0df8-4b1b-adfd-8fdc16f8a3a5",
+  "role": "Admin",
+  "duration_ms": 80.7073,
+  "time": "2025-11-23T02:43:42+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/genres",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 2.2522,
+  "time": "2025-11-23T02:45:09+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/genres",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 0,
+  "time": "2025-11-23T02:45:14+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/genres",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 0,
+  "time": "2025-11-23T02:45:29+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/genres",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 0,
+  "time": "2025-11-23T02:46:09+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/genres",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 0,
+  "time": "2025-11-23T02:47:19+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/genres",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 0,
+  "time": "2025-11-23T02:47:27+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/genres",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 0,
+  "time": "2025-11-23T02:47:29+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/genres/f59238eb-f069-4ab5-830b-1b3e65483a18",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 0,
+  "time": "2025-11-23T02:47:54+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/genres/f59238eb-f069-4ab5-830b-1b3e65483a18",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 0,
+  "time": "2025-11-23T02:48:09+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "PUT",
+  "path": "/genres/f59238eb-f069-4ab5-830b-1b3e65483a18",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 0,
+  "time": "2025-11-23T02:49:03+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/genres",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 0,
+  "time": "2025-11-23T02:49:17+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/swagger/index.html",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 0.9984,
+  "time": "2025-11-23T02:49:21+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/swagger-ui-bundle.js",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 2.9655,
+  "time": "2025-11-23T02:49:21+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/swagger-ui-standalone-preset.js",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 0.9979,
+  "time": "2025-11-23T02:49:21+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/swagger-ui.css",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 1.9975,
+  "time": "2025-11-23T02:49:21+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/swagger/doc.json",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 0.7149,
+  "time": "2025-11-23T02:49:22+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/favicon-32x32.png",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 0.5314,
+  "time": "2025-11-23T02:49:22+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "POST",
+  "path": "/login",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 0,
+  "time": "2025-11-23T02:51:00+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "UserLogin",
+  "userId": "193a443d-0df8-4b1b-adfd-8fdc16f8a3a5",
+  "role": "Admin",
+  "status": "success",
+  "email": "admin@example.com",
+  "time": "2025-11-23T02:51:10+05:00",
+  "message": "UserLogin"
+}
+{
+  "level": "info",
+  "method": "POST",
+  "path": "/login",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 161.6634,
+  "time": "2025-11-23T02:51:10+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/genres/f59238eb-f069-4ab5-830b-1b3e65483a18",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 0,
+  "time": "2025-11-23T02:51:42+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/genres/f59238eb-f069-4ab5-830b-1b3e65483a18",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 0,
+  "time": "2025-11-23T02:52:01+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/genres",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 0.2835,
+  "time": "2025-11-23T02:53:25+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/genres/f59238eb-f069-4ab5-830b-1b3e65483a18",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 0.3124,
+  "time": "2025-11-23T02:53:51+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "UserLogin",
+  "userId": "193a443d-0df8-4b1b-adfd-8fdc16f8a3a5",
+  "role": "Admin",
+  "status": "success",
+  "email": "admin@example.com",
+  "time": "2025-11-23T02:59:56+05:00",
+  "message": "UserLogin"
+}
+{
+  "level": "info",
+  "method": "POST",
+  "path": "/login",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 88.8032,
+  "time": "2025-11-23T02:59:56+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/genres/f59238eb-f069-4ab5-830b-1b3e65483a18",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 0,
+  "time": "2025-11-23T03:00:09+05:00",
+  "message": "Request completed"
+}

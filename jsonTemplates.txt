@@ -1,0 +1,63 @@
+paths
+
+auth / users
+POST   http://localhost:8080/register         → Register a new user
+{
+  "name": "John Doe",
+  "email": "john@example.com",
+  "password": "secret123",
+  "role": "Artist" 
+}
+
+POST   http://localhost:8080/login            → Login user
+{
+  "email": "john@example.com",
+  "password": "secret123"
+}
+
+GET    http://localhost:8080/users            → List all users (Admin only)
+GET    http://localhost:8080/users/:id        → Get user by ID (Admin/Artist/Listener)
+PUT    http://localhost:8080/users/:id        → Update user (Admin/Artist/Listener)
+{
+  "name": "John Updated",
+  "email": "john.updated@example.com",
+  "password": "newpassword123"
+}
+
+DELETE http://localhost:8080/users/:id        → Delete user (Admin/Artist/Listener)
+
+music
+GET    http://localhost:8080/music            → List all music
+GET    http://localhost:8080/music/:id        → Get music by ID
+POST   http://localhost:8080/music            → Create new music (Artist/Admin)
+{
+  "title": "Epic Song",
+  "description": "An epic track for testing",
+  "fileURL": "https://example.com/music/epic_song.mp3",
+  "genreID": "123e4567-e89b-12d3-a456-426614174000"
+}
+
+PUT    http://localhost:8080/music/:id        → Update music (Artist/Admin, own music only)
+{
+  "title": "Epic Song (Remix)",
+  "description": "Updated description",
+  "fileURL": "https://example.com/music/epic_song_remix.mp3",
+  "genreID": "123e4567-e89b-12d3-a456-426614174000"
+}
+
+DELETE http://localhost:8080/music/:id        → Delete music (Artist/Admin, own music only)
+
+genres
+GET    http://localhost:8080/genres           → List all genres
+GET    http://localhost:8080/genres/:id       → Get genre by ID
+POST   http://localhost:8080/genres           → Create a new genre (Admin only)
+{
+  "name": "Rock"
+}
+
+PUT    http://localhost:8080/genres/:id       → Update a genre (Admin only)
+{
+  "name": "Alternative Rock"
+}
+
+DELETE http://localhost:8080/genres/:id       → Delete a genre (Admin only)

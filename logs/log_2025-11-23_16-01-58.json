@@ -1,0 +1,542 @@
+{
+  "level": "info",
+  "time": "2025-11-23T16:01:58+05:00",
+  "message": "Log rotated due to hour change"
+}
+{
+  "level": "info",
+  "event": "UserLogin",
+  "userId": "bcc13472-5dd0-4a5b-bd2f-67aacce5e39c",
+  "role": "Artist",
+  "status": "success",
+  "email": "john@example.com",
+  "time": "2025-11-23T16:01:58+05:00",
+  "message": "UserLogin"
+}
+{
+  "level": "info",
+  "method": "POST",
+  "path": "/login",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 119.0931,
+  "time": "2025-11-23T16:01:58+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "UserLogin",
+  "userId": "e9317a12-1862-468e-81ea-221452936fba",
+  "role": "Artist",
+  "status": "success",
+  "email": "deez@example.com",
+  "time": "2025-11-23T16:03:55+05:00",
+  "message": "UserLogin"
+}
+{
+  "level": "info",
+  "method": "POST",
+  "path": "/login",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 97.7002,
+  "time": "2025-11-23T16:03:55+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "UserLogin",
+  "userId": "e9317a12-1862-468e-81ea-221452936fba",
+  "role": "Artist",
+  "status": "success",
+  "email": "deez@example.com",
+  "time": "2025-11-23T16:04:00+05:00",
+  "message": "UserLogin"
+}
+{
+  "level": "info",
+  "method": "POST",
+  "path": "/login",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 284.072,
+  "time": "2025-11-23T16:04:00+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "DeleteMusic",
+  "userId": "e9317a12-1862-468e-81ea-221452936fba",
+  "role": "Artist",
+  "status": "failed",
+  "error": "artists can only delete their own music",
+  "musicId": "372f4e74-a2dd-4ca1-8889-0b9ad744b281",
+  "time": "2025-11-23T16:04:18+05:00",
+  "message": "DeleteMusic"
+}
+{
+  "level": "info",
+  "method": "DELETE",
+  "path": "/music/372f4e74-a2dd-4ca1-8889-0b9ad744b281",
+  "user_id": "e9317a12-1862-468e-81ea-221452936fba",
+  "role": "Artist",
+  "duration_ms": 13.0854,
+  "time": "2025-11-23T16:04:18+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "UserLogin",
+  "userId": "bcc13472-5dd0-4a5b-bd2f-67aacce5e39c",
+  "role": "Artist",
+  "status": "success",
+  "email": "john@example.com",
+  "time": "2025-11-23T16:05:13+05:00",
+  "message": "UserLogin"
+}
+{
+  "level": "info",
+  "method": "POST",
+  "path": "/login",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 111.9068,
+  "time": "2025-11-23T16:05:13+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "DeleteMusic",
+  "userId": "bcc13472-5dd0-4a5b-bd2f-67aacce5e39c",
+  "role": "Artist",
+  "status": "success",
+  "musicId": "372f4e74-a2dd-4ca1-8889-0b9ad744b281",
+  "time": "2025-11-23T16:05:38+05:00",
+  "message": "DeleteMusic"
+}
+{
+  "level": "info",
+  "method": "DELETE",
+  "path": "/music/372f4e74-a2dd-4ca1-8889-0b9ad744b281",
+  "user_id": "bcc13472-5dd0-4a5b-bd2f-67aacce5e39c",
+  "role": "Artist",
+  "duration_ms": 7.6959,
+  "time": "2025-11-23T16:05:38+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "CreateMusic",
+  "userId": "bcc13472-5dd0-4a5b-bd2f-67aacce5e39c",
+  "role": "Artist",
+  "status": "success",
+  "musicId": "89fa55fc-ed26-4527-8c03-cc598a2c2ddd",
+  "title": "Midnight Skyline",
+  "time": "2025-11-23T16:07:34+05:00",
+  "message": "CreateMusic"
+}
+{
+  "level": "info",
+  "method": "POST",
+  "path": "/music",
+  "user_id": "bcc13472-5dd0-4a5b-bd2f-67aacce5e39c",
+  "role": "Artist",
+  "duration_ms": 25.1728,
+  "time": "2025-11-23T16:07:34+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "CreateMusic",
+  "userId": "bcc13472-5dd0-4a5b-bd2f-67aacce5e39c",
+  "role": "Artist",
+  "status": "success",
+  "musicId": "322652e9-8b48-4fc7-a8ee-ffec42ca50a3",
+  "title": "Rainy Window Loops",
+  "time": "2025-11-23T16:07:54+05:00",
+  "message": "CreateMusic"
+}
+{
+  "level": "info",
+  "method": "POST",
+  "path": "/music",
+  "user_id": "bcc13472-5dd0-4a5b-bd2f-67aacce5e39c",
+  "role": "Artist",
+  "duration_ms": 23.3421,
+  "time": "2025-11-23T16:07:54+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "CreateMusic",
+  "userId": "bcc13472-5dd0-4a5b-bd2f-67aacce5e39c",
+  "role": "Artist",
+  "status": "success",
+  "musicId": "6ff47b65-d30d-4088-82fb-71ef0cbfb94e",
+  "title": "Forest Breath",
+  "time": "2025-11-23T16:08:05+05:00",
+  "message": "CreateMusic"
+}
+{
+  "level": "info",
+  "method": "POST",
+  "path": "/music",
+  "user_id": "bcc13472-5dd0-4a5b-bd2f-67aacce5e39c",
+  "role": "Artist",
+  "duration_ms": 8.5305,
+  "time": "2025-11-23T16:08:05+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "CreateMusic",
+  "userId": "bcc13472-5dd0-4a5b-bd2f-67aacce5e39c",
+  "role": "Artist",
+  "status": "success",
+  "musicId": "91db0539-46a3-44bb-9218-7fd1a383ce8b",
+  "title": "Indigo Horizon",
+  "time": "2025-11-23T16:08:44+05:00",
+  "message": "CreateMusic"
+}
+{
+  "level": "info",
+  "method": "POST",
+  "path": "/music",
+  "user_id": "bcc13472-5dd0-4a5b-bd2f-67aacce5e39c",
+  "role": "Artist",
+  "duration_ms": 6.354,
+  "time": "2025-11-23T16:08:44+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "UserLogin",
+  "userId": "e9317a12-1862-468e-81ea-221452936fba",
+  "role": "Artist",
+  "status": "success",
+  "email": "deez@example.com",
+  "time": "2025-11-23T16:10:13+05:00",
+  "message": "UserLogin"
+}
+{
+  "level": "info",
+  "method": "POST",
+  "path": "/login",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 168.3619,
+  "time": "2025-11-23T16:10:13+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "CreateMusic",
+  "userId": "e9317a12-1862-468e-81ea-221452936fba",
+  "role": "Artist",
+  "status": "success",
+  "musicId": "32195060-2bf4-48bd-8b3c-8ea71c63c0a7",
+  "title": "Bassline Ritual",
+  "time": "2025-11-23T16:10:53+05:00",
+  "message": "CreateMusic"
+}
+{
+  "level": "info",
+  "method": "POST",
+  "path": "/music",
+  "user_id": "e9317a12-1862-468e-81ea-221452936fba",
+  "role": "Artist",
+  "duration_ms": 7.7344,
+  "time": "2025-11-23T16:10:53+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "CreateMusic",
+  "userId": "e9317a12-1862-468e-81ea-221452936fba",
+  "role": "Artist",
+  "status": "success",
+  "musicId": "e8ed641a-c143-4d83-912b-dc59c4fd7d77",
+  "title": "Fusion Pulse",
+  "time": "2025-11-23T16:11:15+05:00",
+  "message": "CreateMusic"
+}
+{
+  "level": "info",
+  "method": "POST",
+  "path": "/music",
+  "user_id": "e9317a12-1862-468e-81ea-221452936fba",
+  "role": "Artist",
+  "duration_ms": 7.8238,
+  "time": "2025-11-23T16:11:15+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "CreateMusic",
+  "userId": "e9317a12-1862-468e-81ea-221452936fba",
+  "role": "Artist",
+  "status": "success",
+  "musicId": "48e0c2f1-9411-4f86-92ef-37a5f24a0445",
+  "title": "Orchestra Dawn",
+  "time": "2025-11-23T16:11:49+05:00",
+  "message": "CreateMusic"
+}
+{
+  "level": "info",
+  "method": "POST",
+  "path": "/music",
+  "user_id": "e9317a12-1862-468e-81ea-221452936fba",
+  "role": "Artist",
+  "duration_ms": 7.7724,
+  "time": "2025-11-23T16:11:49+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "CreateMusic",
+  "userId": "e9317a12-1862-468e-81ea-221452936fba",
+  "role": "Artist",
+  "status": "success",
+  "musicId": "4e213ff9-eff5-424f-ac19-31b76a777d98",
+  "title": "Festival Sparks",
+  "time": "2025-11-23T16:11:55+05:00",
+  "message": "CreateMusic"
+}
+{
+  "level": "info",
+  "method": "POST",
+  "path": "/music",
+  "user_id": "e9317a12-1862-468e-81ea-221452936fba",
+  "role": "Artist",
+  "duration_ms": 22.7923,
+  "time": "2025-11-23T16:11:55+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "UserLogin",
+  "userId": "3a20b49f-bd77-48e1-8855-0b9be6867697",
+  "role": "Artist",
+  "status": "success",
+  "email": "alvaro.ren@example.com",
+  "time": "2025-11-23T16:12:34+05:00",
+  "message": "UserLogin"
+}
+{
+  "level": "info",
+  "method": "POST",
+  "path": "/login",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 143.6651,
+  "time": "2025-11-23T16:12:34+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "CreateMusic",
+  "userId": "3a20b49f-bd77-48e1-8855-0b9be6867697",
+  "role": "Artist",
+  "status": "success",
+  "musicId": "3682c4e9-0df0-4731-8b6d-840a3bb4ce8f",
+  "title": "Moonlit Velvet",
+  "time": "2025-11-23T16:13:09+05:00",
+  "message": "CreateMusic"
+}
+{
+  "level": "info",
+  "method": "POST",
+  "path": "/music",
+  "user_id": "3a20b49f-bd77-48e1-8855-0b9be6867697",
+  "role": "Artist",
+  "duration_ms": 7.4268,
+  "time": "2025-11-23T16:13:09+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "CreateMusic",
+  "userId": "3a20b49f-bd77-48e1-8855-0b9be6867697",
+  "role": "Artist",
+  "status": "success",
+  "musicId": "51a5b5af-fac3-4ee8-a243-106dedd9c52a",
+  "title": "Campfire Echoes",
+  "time": "2025-11-23T16:13:24+05:00",
+  "message": "CreateMusic"
+}
+{
+  "level": "info",
+  "method": "POST",
+  "path": "/music",
+  "user_id": "3a20b49f-bd77-48e1-8855-0b9be6867697",
+  "role": "Artist",
+  "duration_ms": 6.7077,
+  "time": "2025-11-23T16:13:24+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "CreateMusic",
+  "userId": "3a20b49f-bd77-48e1-8855-0b9be6867697",
+  "role": "Artist",
+  "status": "success",
+  "musicId": "8fe94f12-fd77-43d0-9860-877cbff59a6b",
+  "title": "Neon Runner",
+  "time": "2025-11-23T16:13:32+05:00",
+  "message": "CreateMusic"
+}
+{
+  "level": "info",
+  "method": "POST",
+  "path": "/music",
+  "user_id": "3a20b49f-bd77-48e1-8855-0b9be6867697",
+  "role": "Artist",
+  "duration_ms": 6.065,
+  "time": "2025-11-23T16:13:32+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "CreateMusic",
+  "userId": "3a20b49f-bd77-48e1-8855-0b9be6867697",
+  "role": "Artist",
+  "status": "success",
+  "musicId": "c879a1a1-cb7c-4d39-a218-f06b7ed41944",
+  "title": "Night Shift Study Mix",
+  "time": "2025-11-23T16:13:37+05:00",
+  "message": "CreateMusic"
+}
+{
+  "level": "info",
+  "method": "POST",
+  "path": "/music",
+  "user_id": "3a20b49f-bd77-48e1-8855-0b9be6867697",
+  "role": "Artist",
+  "duration_ms": 9.5431,
+  "time": "2025-11-23T16:13:37+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "UserLogin",
+  "userId": "a1f3b798-c986-4fad-bd3f-04dbf6a4a8d6",
+  "role": "Artist",
+  "status": "success",
+  "email": "kiara.solstice@example.com",
+  "time": "2025-11-23T16:14:40+05:00",
+  "message": "UserLogin"
+}
+{
+  "level": "info",
+  "method": "POST",
+  "path": "/login",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 106.0493,
+  "time": "2025-11-23T16:14:40+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "CreateMusic",
+  "userId": "a1f3b798-c986-4fad-bd3f-04dbf6a4a8d6",
+  "role": "Artist",
+  "status": "success",
+  "musicId": "a105aaf3-1541-4e56-8fc4-46dffedf0ac1",
+  "title": "Echoing Caverns",
+  "time": "2025-11-23T16:16:07+05:00",
+  "message": "CreateMusic"
+}
+{
+  "level": "info",
+  "method": "POST",
+  "path": "/music",
+  "user_id": "a1f3b798-c986-4fad-bd3f-04dbf6a4a8d6",
+  "role": "Artist",
+  "duration_ms": 9.3904,
+  "time": "2025-11-23T16:16:07+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "CreateMusic",
+  "userId": "a1f3b798-c986-4fad-bd3f-04dbf6a4a8d6",
+  "role": "Artist",
+  "status": "success",
+  "musicId": "db5fccf6-8dac-4c6c-a5f5-1452064c7efc",
+  "title": "Broken Vinyl",
+  "time": "2025-11-23T16:16:16+05:00",
+  "message": "CreateMusic"
+}
+{
+  "level": "info",
+  "method": "POST",
+  "path": "/music",
+  "user_id": "a1f3b798-c986-4fad-bd3f-04dbf6a4a8d6",
+  "role": "Artist",
+  "duration_ms": 8.8671,
+  "time": "2025-11-23T16:16:16+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "CreateMusic",
+  "userId": "a1f3b798-c986-4fad-bd3f-04dbf6a4a8d6",
+  "role": "Artist",
+  "status": "success",
+  "musicId": "d6e9bf9e-b199-48cf-b22d-16ae1e2493e3",
+  "title": "Crimson Hi-Hats",
+  "time": "2025-11-23T16:16:21+05:00",
+  "message": "CreateMusic"
+}
+{
+  "level": "info",
+  "method": "POST",
+  "path": "/music",
+  "user_id": "a1f3b798-c986-4fad-bd3f-04dbf6a4a8d6",
+  "role": "Artist",
+  "duration_ms": 7.2136,
+  "time": "2025-11-23T16:16:21+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "CreateMusic",
+  "userId": "a1f3b798-c986-4fad-bd3f-04dbf6a4a8d6",
+  "role": "Artist",
+  "status": "success",
+  "musicId": "6428c6a0-a46f-401d-bc33-6c0ea018a42c",
+  "title": "Electric Breeze",
+  "time": "2025-11-23T16:16:26+05:00",
+  "message": "CreateMusic"
+}
+{
+  "level": "info",
+  "method": "POST",
+  "path": "/music",
+  "user_id": "a1f3b798-c986-4fad-bd3f-04dbf6a4a8d6",
+  "role": "Artist",
+  "duration_ms": 6.885,
+  "time": "2025-11-23T16:16:26+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/music",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 0,
+  "time": "2025-11-23T16:17:07+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/music/6428c6a0-a46f-401d-bc33-6c0ea018a42c",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 4.0597,
+  "time": "2025-11-23T16:17:37+05:00",
+  "message": "Request completed"
+}

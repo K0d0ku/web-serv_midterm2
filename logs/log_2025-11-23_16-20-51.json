@@ -1,0 +1,315 @@
+{
+  "level": "info",
+  "time": "2025-11-23T16:20:51+05:00",
+  "message": "Zerolog initialized"
+}
+{
+  "level": "info",
+  "event": "AppStartup",
+  "userId": "",
+  "role": "",
+  "status": "info",
+  "message": "Initializing application",
+  "time": "2025-11-23T16:20:51+05:00",
+  "message": "AppStartup"
+}
+{
+  "level": "info",
+  "event": "EnvLoad",
+  "userId": "",
+  "role": "",
+  "status": "info",
+  "message": ".env loaded successfully",
+  "time": "2025-11-23T16:20:51+05:00",
+  "message": "EnvLoad"
+}
+{
+  "level": "info",
+  "event": "DBConnect",
+  "userId": "",
+  "role": "",
+  "status": "info",
+  "message": "Database connection established",
+  "time": "2025-11-23T16:20:52+05:00",
+  "message": "DBConnect"
+}
+{
+  "level": "info",
+  "event": "SeedAdmin",
+  "userId": "",
+  "role": "",
+  "status": "info",
+  "message": "Admin user ensured",
+  "time": "2025-11-23T16:20:52+05:00",
+  "message": "SeedAdmin"
+}
+{
+  "level": "info",
+  "event": "ServerStart",
+  "userId": "",
+  "role": "",
+  "status": "info",
+  "port": 8080,
+  "time": "2025-11-23T16:20:52+05:00",
+  "message": "ServerStart"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/swagger/index.html",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 0.725,
+  "time": "2025-11-23T16:23:32+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/swagger-ui.css",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 0.9797,
+  "time": "2025-11-23T16:23:32+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/swagger-ui-bundle.js",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 19.954,
+  "time": "2025-11-23T16:23:32+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/swagger-ui-standalone-preset.js",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 2.0015,
+  "time": "2025-11-23T16:23:32+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/swagger/doc.json",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 1.001,
+  "time": "2025-11-23T16:23:33+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/favicon-32x32.png",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 0,
+  "time": "2025-11-23T16:23:33+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "GetAllMusic",
+  "userId": "",
+  "role": "",
+  "status": "success",
+  "count": 16,
+  "time": "2025-11-23T16:24:08+05:00",
+  "message": "GetAllMusic"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/music",
+  "user_id": "a1f3b798-c986-4fad-bd3f-04dbf6a4a8d6",
+  "role": "Artist",
+  "duration_ms": 20.5128,
+  "time": "2025-11-23T16:24:08+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "GetMusicByID",
+  "userId": "",
+  "role": "",
+  "status": "success",
+  "id": "6428c6a0-a46f-401d-bc33-6c0ea018a42c",
+  "time": "2025-11-23T16:25:07+05:00",
+  "message": "GetMusicByID"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/music/6428c6a0-a46f-401d-bc33-6c0ea018a42c",
+  "user_id": "a1f3b798-c986-4fad-bd3f-04dbf6a4a8d6",
+  "role": "Artist",
+  "duration_ms": 6.3153,
+  "time": "2025-11-23T16:25:07+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "GetMusicByID",
+  "userId": "",
+  "role": "",
+  "status": "success",
+  "id": "4e213ff9-eff5-424f-ac19-31b76a777d98",
+  "time": "2025-11-23T16:26:28+05:00",
+  "message": "GetMusicByID"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/music/4e213ff9-eff5-424f-ac19-31b76a777d98",
+  "user_id": "a1f3b798-c986-4fad-bd3f-04dbf6a4a8d6",
+  "role": "Artist",
+  "duration_ms": 3.9259,
+  "time": "2025-11-23T16:26:28+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "UserLogin",
+  "userId": "18bed505-4862-452c-bec9-26acbd7af9eb",
+  "role": "Listener",
+  "status": "success",
+  "email": "mira.valens@example.com",
+  "time": "2025-11-23T16:28:02+05:00",
+  "message": "UserLogin"
+}
+{
+  "level": "info",
+  "method": "POST",
+  "path": "/login",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 100.3568,
+  "time": "2025-11-23T16:28:02+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "GetAllMusic",
+  "userId": "",
+  "role": "",
+  "status": "success",
+  "count": 16,
+  "time": "2025-11-23T16:28:26+05:00",
+  "message": "GetAllMusic"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/music",
+  "user_id": "18bed505-4862-452c-bec9-26acbd7af9eb",
+  "role": "Listener",
+  "duration_ms": 4.8498,
+  "time": "2025-11-23T16:28:26+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "GetMusicByID",
+  "userId": "",
+  "role": "",
+  "status": "success",
+  "id": "4e213ff9-eff5-424f-ac19-31b76a777d98",
+  "time": "2025-11-23T16:29:37+05:00",
+  "message": "GetMusicByID"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/music/4e213ff9-eff5-424f-ac19-31b76a777d98",
+  "user_id": "18bed505-4862-452c-bec9-26acbd7af9eb",
+  "role": "Listener",
+  "duration_ms": 5.7587,
+  "time": "2025-11-23T16:29:37+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "POST",
+  "path": "/music",
+  "user_id": "18bed505-4862-452c-bec9-26acbd7af9eb",
+  "role": "Listener",
+  "duration_ms": 0.6981,
+  "time": "2025-11-23T16:30:09+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "PUT",
+  "path": "/music/4e213ff9-eff5-424f-ac19-31b76a777d98",
+  "user_id": "18bed505-4862-452c-bec9-26acbd7af9eb",
+  "role": "Listener",
+  "duration_ms": 1.1519,
+  "time": "2025-11-23T16:31:18+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "DELETE",
+  "path": "/music/4e213ff9-eff5-424f-ac19-31b76a777d98",
+  "user_id": "18bed505-4862-452c-bec9-26acbd7af9eb",
+  "role": "Listener",
+  "duration_ms": 4.1512,
+  "time": "2025-11-23T16:31:53+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/users",
+  "user_id": "18bed505-4862-452c-bec9-26acbd7af9eb",
+  "role": "Listener",
+  "duration_ms": 1.7288,
+  "time": "2025-11-23T16:32:21+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "GetAllGenres",
+  "userId": "",
+  "role": "",
+  "status": "success",
+  "count": 10,
+  "time": "2025-11-23T16:32:32+05:00",
+  "message": "GetAllGenres"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/genres",
+  "user_id": "18bed505-4862-452c-bec9-26acbd7af9eb",
+  "role": "Listener",
+  "duration_ms": 15.7037,
+  "time": "2025-11-23T16:32:32+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "GetGenreByID",
+  "userId": "",
+  "role": "",
+  "status": "success",
+  "id": "803b5327-a8c3-475b-bc48-26777c7dbaa4",
+  "time": "2025-11-23T16:33:52+05:00",
+  "message": "GetGenreByID"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/genres/803b5327-a8c3-475b-bc48-26777c7dbaa4",
+  "user_id": "18bed505-4862-452c-bec9-26acbd7af9eb",
+  "role": "Listener",
+  "duration_ms": 15.7801,
+  "time": "2025-11-23T16:33:52+05:00",
+  "message": "Request completed"
+}

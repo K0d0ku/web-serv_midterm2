@@ -1,0 +1,161 @@
+{
+  "level": "info",
+  "time": "2025-11-23T13:27:39+05:00",
+  "message": "Log rotated due to hour change"
+}
+{
+  "level": "info",
+  "event": "GetGenreByID",
+  "userId": "",
+  "role": "",
+  "status": "success",
+  "id": "f59238eb-f069-4ab5-830b-1b3e65483a18",
+  "time": "2025-11-23T13:27:39+05:00",
+  "message": "GetGenreByID"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/genres/f59238eb-f069-4ab5-830b-1b3e65483a18",
+  "user_id": "193a443d-0df8-4b1b-adfd-8fdc16f8a3a5",
+  "role": "Admin",
+  "duration_ms": 153.8278,
+  "time": "2025-11-23T13:27:39+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "UpdateGenre",
+  "userId": "",
+  "role": "",
+  "status": "success",
+  "id": "f59238eb-f069-4ab5-830b-1b3e65483a18",
+  "name": "Rock",
+  "time": "2025-11-23T13:29:40+05:00",
+  "message": "UpdateGenre"
+}
+{
+  "level": "info",
+  "method": "PUT",
+  "path": "/genres/f59238eb-f069-4ab5-830b-1b3e65483a18",
+  "user_id": "193a443d-0df8-4b1b-adfd-8fdc16f8a3a5",
+  "role": "Admin",
+  "duration_ms": 55.5631,
+  "time": "2025-11-23T13:29:40+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "DeleteGenre",
+  "userId": "",
+  "role": "",
+  "status": "success",
+  "id": "f59238eb-f069-4ab5-830b-1b3e65483a18",
+  "time": "2025-11-23T13:32:11+05:00",
+  "message": "DeleteGenre"
+}
+{
+  "level": "info",
+  "method": "DELETE",
+  "path": "/genres/f59238eb-f069-4ab5-830b-1b3e65483a18",
+  "user_id": "193a443d-0df8-4b1b-adfd-8fdc16f8a3a5",
+  "role": "Admin",
+  "duration_ms": 108.8216,
+  "time": "2025-11-23T13:32:11+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/genres",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 1.4155,
+  "time": "2025-11-23T13:34:13+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "UserLogin",
+  "userId": "bcc13472-5dd0-4a5b-bd2f-67aacce5e39c",
+  "role": "Artist",
+  "status": "success",
+  "email": "john@example.com",
+  "time": "2025-11-23T13:36:02+05:00",
+  "message": "UserLogin"
+}
+{
+  "level": "info",
+  "method": "POST",
+  "path": "/login",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 96.7085,
+  "time": "2025-11-23T13:36:02+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "GetAllGenres",
+  "userId": "",
+  "role": "",
+  "status": "success",
+  "count": 0,
+  "time": "2025-11-23T13:36:17+05:00",
+  "message": "GetAllGenres"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/genres",
+  "user_id": "bcc13472-5dd0-4a5b-bd2f-67aacce5e39c",
+  "role": "Artist",
+  "duration_ms": 3.0658,
+  "time": "2025-11-23T13:36:17+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/swagger/index.html",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 3.4444,
+  "time": "2025-11-23T13:46:11+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/swagger-ui.css",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 1.9806,
+  "time": "2025-11-23T13:46:11+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/swagger-ui-standalone-preset.js",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 28.8494,
+  "time": "2025-11-23T13:46:11+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/swagger-u{"level":"info","method":"GET","path":"/swagger/index.html","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-23T13:56:58+05:00","message":"Request completed"}
+{"level":"info","method":"GET","path":"/swagger-ui.css","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-23T13:56:59+05:00","message":"Request completed"}
+{"level":"info","method":"GET","path":"/swagger-ui-standalone-preset.js","user_id":"guest","role":"guest","duration_ms":0.999,"time":"2025-11-23T13:56:59+05:00","message":"Request completed"}
+{"level":"info","method":"GET","path":"/swagger-ui-bundle.js","user_id":"guest","role":"guest","duration_ms":11.9966,"time":"2025-11-23T13:56:59+05:00","message":"Request completed"}
+{"level":"info","method":"GET","path":"/swagger/doc.json","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-23T13:56:59+05:00","message":"Request completed"}
+{"level":"info","method":"GET","path":"/favicon-32x32.png","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-23T13:56:59+05:00","message":"Request completed"}
+{"level":"info","event":"UserLogin","userId":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","status":"success","email":"admin@example.com","time":"2025-11-23T13:57:29+05:00","message":"UserLogin"}
+{"level":"info","method":"POST","path":"/login","user_id":"guest","role":"guest","duration_ms":97.5663,"time":"2025-11-23T13:57:29+05:00","message":"Request completed"}
+{"level":"info","event":"GetAllGenres","userId":"","role":"","status":"success","count":0,"time":"2025-11-23T13:57:46+05:00","message":"GetAllGenres"}
+{"level":"info","method":"GET","path":"/genres","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":12.2159,"time":"2025-11-23T13:57:46+05:00","message":"Request completed"}
+{"level":"info","event":"CreateGenre","userId":"","role":"","status":"failed","error":"Invalid JSON","time":"2025-11-23T13:59:31+05:00","message":"CreateGenre"}
+{"level":"info","method":"POST","path":"/genres","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":23.4117,"time":"2025-11-23T13:59:31+05:00","message":"Request completed"}

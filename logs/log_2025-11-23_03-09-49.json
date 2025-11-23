@@ -1,0 +1,155 @@
+{
+  "level": "info",
+  "time": "2025-11-23T03:09:49+05:00",
+  "message": "Zerolog initialized"
+}
+{
+  "level": "info",
+  "event": "AppStartup",
+  "userId": "",
+  "role": "",
+  "status": "info",
+  "message": "Initializing application",
+  "time": "2025-11-23T03:09:49+05:00",
+  "message": "AppStartup"
+}
+{
+  "level": "info",
+  "event": "EnvLoad",
+  "userId": "",
+  "role": "",
+  "status": "info",
+  "message": ".env loaded successfully",
+  "time": "2025-11-23T03:09:49+05:00",
+  "message": "EnvLoad"
+}
+{
+  "level": "info",
+  "event": "DBConnect",
+  "userId": "",
+  "role": "",
+  "status": "info",
+  "message": "Database connection established",
+  "time": "2025-11-23T03:09:49+05:00",
+  "message": "DBConnect"
+}
+{
+  "level": "info",
+  "event": "SeedAdmin",
+  "userId": "",
+  "role": "",
+  "status": "info",
+  "message": "Admin user ensured",
+  "time": "2025-11-23T03:09:49+05:00",
+  "message": "SeedAdmin"
+}
+{
+  "level": "info",
+  "event": "ServerStart",
+  "userId": "",
+  "role": "",
+  "status": "info",
+  "port": 8080,
+  "time": "2025-11-23T03:09:49+05:00",
+  "message": "ServerStart"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/swagger/index.html",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 44.9238,
+  "time": "2025-11-23T03:24:30+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/swagger-ui.css",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 54.2115,
+  "time": "2025-11-23T03:24:30+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/swagger-ui-standalone-preset.js",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 88.4207,
+  "time": "2025-11-23T03:24:30+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/swagger-ui-bundle.js",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 129.2038,
+  "time": "2025-11-23T03:24:30+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/swagger/doc.json",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 6.7313,
+  "time": "2025-11-23T03:24:31+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/favicon-32x32.png",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 0.5091,
+  "time": "2025-11-23T03:24:31+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "UserLogin",
+  "userId": "193a443d-0df8-4b1b-adfd-8fdc16f8a3a5",
+  "role": "Admin",
+  "status": "success",
+  "email": "admin@example.com",
+  "time": "2025-11-23T03:24:51+05:00",
+  "message": "UserLogin"
+}
+{
+  "level": "info",
+  "method": "POST",
+  "path": "/login",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 103.2876,
+  "time": "2025-11-23T03:24:51+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "GetAllGenres",
+  "userId": "",
+  "role": "",
+  "status": "success",
+  "count": 1,
+  "time": "2025-11-23T03:25:07+05:00",
+  "message": "GetAllGenres"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/genres",
+  "user_id": "193a443d-0df8-4b1b-adfd-8fdc16f8a3a5",
+  "role": "Admin",
+  "duration_ms": 10.3113,
+  "time": "2025-11-23T03:25:07+05:00",
+  "message": "Request completed"
+}

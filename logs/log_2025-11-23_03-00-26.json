@@ -1,0 +1,145 @@
+{
+  "level": "info",
+  "time": "2025-11-23T03:00:26+05:00",
+  "message": "Log rotated due to hour change"
+}
+{
+  "level": "info",
+  "event": "GetGenreByID",
+  "userId": "",
+  "role": "",
+  "status": "success",
+  "id": "f59238eb-f069-4ab5-830b-1b3e65483a18",
+  "time": "2025-11-23T03:00:26+05:00",
+  "message": "GetGenreByID"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/genres/f59238eb-f069-4ab5-830b-1b3e65483a18",
+  "user_id": "193a443d-0df8-4b1b-adfd-8fdc16f8a3a5",
+  "role": "Admin",
+  "duration_ms": 35.498,
+  "time": "2025-11-23T03:00:26+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/swagger/index.html",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 0.5361,
+  "time": "2025-11-23T03:01:55+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/swagger-ui.css",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 0,
+  "time": "2025-11-23T03:01:56+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/swagger-ui-standalone-preset.js",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 6.5238,
+  "time": "2025-11-23T03:01:56+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/swagger-ui-bundle.js",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 0.9996,
+  "time": "2025-11-23T03:01:56+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/favicon-32x32.png",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 0.5317,
+  "time": "2025-11-23T03:01:56+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/swagger/doc.json",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 0.5317,
+  "time": "2025-11-23T03:01:56+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "UserLogin",
+  "userId": "193a443d-0df8-4b1b-adfd-8fdc16f8a3a5",
+  "role": "Admin",
+  "status": "success",
+  "email": "admin@example.com",
+  "time": "2025-11-23T03:02:10+05:00",
+  "message": "UserLogin"
+}
+{
+  "level": "info",
+  "method": "POST",
+  "path": "/login",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 134.2124,
+  "time": "2025-11-23T03:02:10+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/genres",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 0,
+  "time": "2025-11-23T03:02:46+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "event": "GetAllGenres",
+  "userId": "",
+  "role": "",
+  "status": "success",
+  "count": 1,
+  "time": "2025-11-23T03:03:17+05:00",
+  "message": "GetAllGenres"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/genres",
+  "user_id": "193a443d-0df8-4b1b-adfd-8fdc16f8a3a5",
+  "role": "Admin",
+  "duration_ms": 4.4212,
+  "time": "2025-11-23T03:03:17+05:00",
+  "message": "Request completed"
+}
+{
+  "level": "info",
+  "method": "GET",
+  "path": "/genres/f59238eb-f069-4ab5-830b-1b3e65483a18",
+  "user_id": "guest",
+  "role": "guest",
+  "duration_ms": 0,
+  "time": "2025-11-23T03:03:25+05:00",
+  "message": "Request completed"
+}

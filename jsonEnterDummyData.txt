@@ -1,0 +1,229 @@
+this is a file to store a Json data that we are going to feed into the api.
+i will only list creation related data since Read, Update and Delete can be done with existing data only.
+
+1st Category, User related endpoints:
+Auth: # POST   http://localhost:8080/register         → Register a new user
+{
+  "email": "string",
+  "name": "string",
+  "password": "string",
+  "role": "Artist" (or Listener)
+}
+
+Listeners:
+{
+  "email": "mira.valens@example.com",
+  "name": "Mira Valens",
+  "password": "MiraPass!482",
+  "role": "Listener"
+}
+{
+  "email": "andrew.kolt@example.com",
+  "name": "Andrew Kolt",
+  "password": "StrongWolf22@",
+  "role": "Listener"
+}
+{
+  "email": "selin.yura@example.com",
+  "name": "Selin Yura",
+  "password": "Selin_3948",
+  "role": "Listener"
+}
+{
+  "email": "daniel.crest@example.com",
+  "name": "Daniel Crest",
+  "password": "CrestWave!91",
+  "role": "Listener"
+}
+{
+  "email": "hana.merel@example.com",
+  "name": "Hana Merel",
+  "password": "HanaPass#450",
+  "role": "Listener"
+}
+
+Artists:
+{
+"email": "john@example.com",
+"name": "John Doe",
+"password": "secret123",
+"role": "Artist"
+}
+{
+"email": "deez@example.com",
+"name": "Ligon Deez",
+"password": "ligon123",
+"role": "Artist"
+}
+{
+  "email": "alvaro.ren@example.com",
+  "name": "Alvaro Ren",
+  "password": "RenArtist_338",
+  "role": "Artist"
+}
+{
+  "email": "kiara.solstice@example.com",
+  "name": "Kiara Solstice",
+  "password": "SolsticeStar*72",
+  "role": "Artist"
+}
+
+
+2nd Category, Music related endpoints:
+Genre: # POST   http://localhost:8080/genres           → Create a new genre (Admin only)
+{
+  "description": "string",
+  "name": "string"
+}
+
+Genres:
+{
+  "name": "Synthwave",
+  "description": "A retro-futuristic electronic genre inspired by 80s aesthetics."
+}
+{
+  "name": "Lo-Fi",
+  "description": "Relaxed, low-fidelity music often used for studying and background ambiance."
+}
+{
+  "name": "Ambient",
+  "description": "Atmospheric soundscapes focused on tone and mood rather than structure."
+}
+{
+  "name": "Indie Rock",
+  "description": "Alternative rock style emphasizing independent production and unique sound."
+}
+{
+  "name": "Trap",
+  "description": "A hip-hop subgenre characterized by heavy bass, rapid hi-hats, and dark tones."
+}
+{
+  "name": "Jazz Fusion",
+  "description": "A blend of jazz improvisation with rock rhythms and electric instruments."
+}
+{
+  "name": "Classical",
+  "description": "Traditional orchestral and instrumental compositions spanning centuries."
+}
+{
+  "name": "EDM",
+  "description": "Electronic dance music designed for clubs, festivals, and energetic environments."
+}
+{
+  "name": "R&B",
+  "description": "Rhythm and blues featuring soulful vocals and smooth instrumental grooves."
+}
+{
+  "name": "Acoustic",
+  "description": "Music created using primarily non-electronic instruments, focusing on natural sound."
+}
+
+
+3rd Category, Music related endpoints:
+IMPORTANT: to create a music, a user must be logged in as Admin or Artist, and Genres have to be created by Admin
+beforehand so we can use a genre ID when creating Music.
+Music: # POST   http://localhost:8080/music            → Create new music (Artist/Admin)
+{
+  "description": "string",
+  "file_url": "string",
+  "genre_id": "string",
+  "title": "string"
+}
+
+Music:
+{
+  "title": "Midnight Skyline",
+  "description": "A soft synthwave track inspired by neon city lights.",
+  "file_url": "http://localhost/files/midnight_skyline.mp3",
+  "genre_id": "7596ac84-75f7-4e0d-b65d-816b354c9127"
+}
+{
+  "title": "Rainy Window Loops",
+  "description": "Calm lo-fi beats for study and relaxing evenings.",
+  "file_url": "http://localhost/files/rainy_window_loops.mp3",
+  "genre_id": "f98c44d1-2b16-4a97-af18-54193c92edf1"
+}
+{
+  "title": "Forest Breath",
+  "description": "Ambient textures inspired by nature and deep calm.",
+  "file_url": "http://localhost/files/forest_breath.mp3",
+  "genre_id": "803b5327-a8c3-475b-bc48-26777c7dbaa4"
+}
+{
+  "title": "Indigo Horizon",
+  "description": "An indie rock track with dreamy guitar layers.",
+  "file_url": "http://localhost/files/indigo_horizon.mp3",
+  "genre_id": "654492d7-f5d0-4ab8-91ab-d8d28c2ee8c0"
+}
+{
+  "title": "Bassline Ritual",
+  "description": "Energetic trap beat with heavy sub bass.",
+  "file_url": "http://localhost/files/bassline_ritual.mp3",
+  "genre_id": "bf9b7569-4d42-44f6-9281-1507da004f52"
+}
+{
+  "title": "Fusion Pulse",
+  "description": "Jazz fusion track blending electric guitar and synth leads.",
+  "file_url": "http://localhost/files/fusion_pulse.mp3",
+  "genre_id": "b965e475-468f-4dbd-9118-69f0e5dd3dbf"
+}
+{
+  "title": "Orchestra Dawn",
+  "description": "Bright classical composition with strings and brass section.",
+  "file_url": "http://localhost/files/orchestra_dawn.mp3",
+  "genre_id": "5976b8de-8424-4a6a-ac22-f2a0f4e1dfdb"
+}
+{
+  "title": "Festival Sparks",
+  "description": "High-energy EDM track for festivals and parties.",
+  "file_url": "http://localhost/files/festival_sparks.mp3",
+  "genre_id": "64e0aed2-f023-4ddd-9986-608126073a90"
+}
+{
+  "title": "Moonlit Velvet",
+  "description": "Smooth R&B vocals layered with atmospheric pads.",
+  "file_url": "http://localhost/files/moonlit_velvet.mp3",
+  "genre_id": "083b6e6e-50e0-4ba3-aed9-40e89ccf33da"
+}
+{
+  "title": "Campfire Echoes",
+  "description": "Acoustic performance with soft guitar and warm vocals.",
+  "file_url": "http://localhost/files/campfire_echoes.mp3",
+  "genre_id": "996e081e-de06-47b5-9013-433b8ced157a"
+}
+{
+  "title": "Neon Runner",
+  "description": "Fast-paced synthwave track inspired by retro racing games.",
+  "file_url": "http://localhost/files/neon_runner.mp3",
+  "genre_id": "7596ac84-75f7-4e0d-b65d-816b354c9127"
+}
+{
+  "title": "Night Shift Study Mix",
+  "description": "Smooth lo-fi rhythms for late-night concentration.",
+  "file_url": "http://localhost/files/night_shift_mix.mp3",
+  "genre_id": "f98c44d1-2b16-4a97-af18-54193c92edf1"
+}
+{
+  "title": "Echoing Caverns",
+  "description": "Deep ambient drones evoking cave-like acoustics.",
+  "file_url": "http://localhost/files/echoing_caverns.mp3",
+  "genre_id": "803b5327-a8c3-475b-bc48-26777c7dbaa4"
+}
+{
+  "title": "Broken Vinyl",
+  "description": "Indie rock with raw guitars and emotional vocals.",
+  "file_url": "http://localhost/files/broken_vinyl.mp3",
+  "genre_id": "654492d7-f5d0-4ab8-91ab-d8d28c2ee8c0"
+}
+{
+  "title": "Crimson Hi-Hats",
+  "description": "Trap beat focused on rapid hi-hats and dark ambience.",
+  "file_url": "http://localhost/files/crimson_hihats.mp3",
+  "genre_id": "bf9b7569-4d42-44f6-9281-1507da004f52"
+}
+{
+  "title": "Electric Breeze",
+  "description": "A modern jazz fusion track with light improvisation.",
+  "file_url": "http://localhost/files/electric_breeze.mp3",
+  "genre_id": "b965e475-468f-4dbd-9118-69f0e5dd3dbf"
+}
