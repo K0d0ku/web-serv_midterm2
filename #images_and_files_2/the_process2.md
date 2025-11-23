@@ -7,13 +7,13 @@ Table of contents
 - [Requirements](#requirements)
 - [Process](#process)
 - [1. Implementing CRUD operations using an external REST style](#1-implementing-crud-operations-using-an-external-rest-style)
-  - 1.1. Implementing validation (Package Validator - https://github.com/go-playground/validator)
+  - [1.1 Implementing validation](#11-implementing-validation)
 - [2. Implementing dependency injection](#2-implementing-dependency-injection)
-  - 2.1. Logging (Seq Logger, Zerolog)
-  - 2.2. Repository pattern using a Postgres database
+  - [2.1 Logging](#21-logging)
+  - [2.2 Repository pattern using a Postgres database](#22-repository-pattern-using-a-postgres-database)
 - [3. API testing](#3-api-testing)
-  - 3.1. Using net/http (or its equivalent) in the web part
-  - 3.2. Using Postman or other equivalents
+  - [3.1 Using net/http](#31-using-nethttp-or-its-equivalent)
+  - [3.2 Using Postman or other equivalents](#32-using-postman-or-other-equivalents)
 - [4. Implementing API authorization (JWT or other options)](#4-implementing-api-authorization-jwt-or-other-options)
 - [Additional content](#additional-content)
 
