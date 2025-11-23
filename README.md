@@ -35,7 +35,7 @@ code
 
 Created a postgres Database called **KuroApiDb2**  
 
-#### Tools and IDE's  
+## Tools and IDE's  
 - Go 1.25.4 — primary backend language
 - Goland — IDE for Go development (it was the best suit for my case)
 - PostgreSQL 17 — with PgAdmin, main relational database
@@ -43,7 +43,7 @@ Created a postgres Database called **KuroApiDb2**
 - Postman — API testing
 - Swagger (Swaggo) — API documentation generator
 
-#### Packages and Libraries  
+## Packages and Libraries  
 1. Core Backend Framework:
 
 | Package           | Link                                                                 | Description                                                            |
