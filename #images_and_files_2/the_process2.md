@@ -570,21 +570,247 @@ This implementation encapsulates all Postgres operations for music records.
 ![MusicListenerGetAllMusic.png](https://github.com/K0d0ku/web-serv_midterm2/blob/main/%23images_and_files_2/test%20screenshots/api%20tests/swagger/music/listener/MusicListenerGetAllMusic.png)
 
 ## 3. API testing
-Content here.
+The API exposes endpoints for authentication, authorization, and CRUD operations for Users, Music, and Genres. The two critical endpoints are /register and /login, which handle user creation and JWT token generation. All other endpoints enforce role-based access control (RBAC) to ensure only authorized users can perform actions like updating or deleting resources.  
+Data transmitted through the API is structured via DTOs and validated using go-playground/validator before being persisted in the database, maintaining integrity and preventing invalid input. CRUD operations for Music and Genres respect entity relationships, for example ensuring music is associated with a valid genre and the creating user has the proper role.  
+
+#### the endpoints [.env](https://github.com/K0d0ku/web-serv_midterm2/blob/main/.env):  
+## Auth / Users
+
+| Method | Endpoint                       | Description                              |
+|--------|--------------------------------|------------------------------------------|
+| POST   | /register                      | Register a new user                       |
+| POST   | /login                         | Login user                                |
+| GET    | /users                         | List all users (Admin only)              |
+| GET    | /users/:id                     | Get user by ID (Admin/Artist/Listener)  |
+| PUT    | /users/:id                     | Update user (Admin/Artist/Listener)     |
+| DELETE | /users/:id                     | Delete user (Admin/Artist/Listener)     |
+
+## Music
+
+| Method | Endpoint                       | Description                                    |
+|--------|--------------------------------|------------------------------------------------|
+| GET    | /music                         | List all music                                 |
+| GET    | /music/:id                     | Get music by ID                                |
+| POST   | /music                         | Create new music (Artist/Admin)               |
+| PUT    | /music/:id                     | Update music (Artist/Admin, own music only)  |
+| DELETE | /music/:id                     | Delete music (Artist/Admin, own music only)  |
+
+## Genres
+
+| Method | Endpoint                       | Description                        |
+|--------|--------------------------------|------------------------------------|
+| GET    | /genres                        | List all genres                     |
+| GET    | /genres/:id                    | Get genre by ID                     |
+| POST   | /genres                        | Create a new genre (Admin only)    |
+| PUT    | /genres/:id                    | Update a genre (Admin only)        |
+| DELETE | /genres/:id                    | Delete a genre (Admin only)        |
+  
+#### and upload [json data](https://github.com/K0d0ku/web-serv_midterm2/blob/main/jsonEnterDummyData.txt) :
+```
+Auth: # POST   http://localhost:8080/register         → Register a new user
+{
+  "email": "string",
+  "name": "string",
+  "password": "string",
+  "role": "Artist" (or Listener)
+}
+
+Genre: # POST   http://localhost:8080/genres           → Create a new genre (Admin only)
+{
+  "description": "string",
+  "name": "string"
+}
+
+Music: # POST   http://localhost:8080/music            → Create new music (Artist/Admin)
+{
+  "description": "string",
+  "file_url": "string",
+  "genre_id": "string",
+  "title": "string"
+}
+```  
+![MusicArtistUpdateNotOWNMusicByID2.png](https://github.com/K0d0ku/web-serv_midterm2/blob/main/%23images_and_files_2/test%20screenshots/api%20tests/swagger/music/artist/MusicArtistUpdateNotOWNMusicByID2.png)  
+![GenresListenerGetAllGenres.png](https://github.com/K0d0ku/web-serv_midterm2/blob/main/%23images_and_files_2/test%20screenshots/api%20tests/swagger/music/listener/GenresListenerGetAllGenres.png)  
+Most image files for APi Tests are located in: [#images_and_files_2](https://github.com/K0d0ku/web-serv_midterm2/tree/main/%23images_and_files_2), [process screenshots](https://github.com/K0d0ku/web-serv_midterm2/tree/main/%23images_and_files_2/process%20screenshots) and [test screenshots](https://github.com/K0d0ku/web-serv_midterm2/tree/main/%23images_and_files_2/test%20screenshots) folders.  
 
 ### 3.1 Using net/http (or its equivalent)
-Content here.
+API testing is essential for verifying that endpoints behave as expected. In this project, i've leveraged `Swagger UI` to provide an interactive interface for testing all HTTP routes, while the underlying HTTP handling is powered by Go’s `net/http` via `Echo`.  
+1. Swagger packages were installed using:
+```
+go get -u github.com/swaggo/swag/cmd/swag
+go get -u github.com/swaggo/echo-swagger
+```
+2. Swagger logic was integrated throughout the project:
+  - [main.go](https://github.com/K0d0ku/web-serv_midterm2/blob/main/main.go) sets up the Swagger handler and configures metadata like title, version, host, base path, and security definitions.
+    ```
+    docs.SwaggerInfo.Title = "Midterm2 API"
+	docs.SwaggerInfo.Description = "Music API with Users, Genres, and JWT authentication"
+	docs.SwaggerInfo.Version = "1.0"
+	docs.SwaggerInfo.Host = "localhost:8080"
+	docs.SwaggerInfo.BasePath = "/"
+	docs.SwaggerInfo.Schemes = []string{"http"}
+	e.GET("/swagger/*", echoSwagger.WrapHandler)
+    ```
+  - [auth_handler.go](https://github.com/K0d0ku/web-serv_midterm2/blob/main/handlers/auth_handler.go) and [music_handler.go](https://github.com/K0d0ku/web-serv_midterm2/blob/main/handlers/music_handler.go) contain endpoint-level annotations (`@Summary`, `@Description`, `@Tags`, `@Param`, `@Success`, `@Failure`, `@Router`, `@Security`) to automatically generate Swagger docs for all routes.
+    ```
+    // handlers/auth_handler.go
+    // ListAllUsers godoc
+	// @Summary Get all users
+	// @Description List all users (Admin only)
+	// @Tags 2Users
+	// @Produce json
+	// @Success 200 {array} models.User
+	// @Failure 500 {object} map[string]interface{}
+	// @Security ApiKeyAuth
+	// @Router /users [get]
+    func (h *AuthHandler) ListAllUsers(c echo.Context) error { ... )
+
+    // handlers/music_handler.go
+    // GetAllMusic godoc
+	// @Summary Get all music
+	// @Description Fetch all music tracks
+	// @Tags 3Music
+	// @Produce json
+	// @Success 200 {array} models.Music
+	// @Failure 500 {object} map[string]interface{}
+	// @Router /music [get]
+	// @Security ApiKeyAuth
+	func (h *MusicHandler) GetAllMusic(c echo.Context) error { ... }
+    ```
+  - DTOs ([dto.go](https://github.com/K0d0ku/web-serv_midterm2/blob/main/dto/dto.go)) provide structured payloads that are validated before hitting services and repositories.
+3. Swagger documentation was built and updated via:
+```
+swag init
+```
+This command parses all annotated handlers and generates the Swagger JSON/YAML files, which Echo serves at /swagger/index.html. Users can then interact with endpoints, test authentication flows, and verify RBAC-enforced CRUD operations directly from the UI.  
+![SwaggerUI.png](https://github.com/K0d0ku/web-serv_midterm2/blob/main/%23images_and_files_2/screenshots%20for%20documentation/SwaggerUI.png)
 
 ### 3.2 Using Postman or other equivalents
-Content here.
+![PostmanAllAPIEndpoints.png](https://github.com/K0d0ku/web-serv_midterm2/blob/main/%23images_and_files_2/test%20screenshots/api%20tests/postman/PostmanAllAPIEndpoints.png)  
+![PostmanValidation.png](https://github.com/K0d0ku/web-serv_midterm2/blob/main/%23images_and_files_2/screenshots%20for%20documentation/PostmanValidation.png)  
+![apiPostmantest.png](https://github.com/K0d0ku/web-serv_midterm2/blob/main/%23images_and_files_2/process%20screenshots/apiPostmantest.png)  
+![apidataDbregister.png](https://github.com/K0d0ku/web-serv_midterm2/blob/main/%23images_and_files_2/process%20screenshots/apidataDbregister.png)  
 
 ## 4. Implementing API authorization (JWT or other options)
-Content here.
+Authorization in this project is handled using JWT (JSON Web Tokens). JWT provides a stateless way to verify the identity and role of a user across requests. When a user logs in, a token containing their ID and role is generated and signed with a secret key. This token is then sent in the Authorization header for subsequent requests to protected endpoints. Middleware intercepts these requests, validates the token, and injects the user information into the request context for role-based access control (RBAC).  
+[utils/jwt.go](https://github.com/K0d0ku/web-serv_midterm2/blob/main/utils/jwt.go)  
+```
+package utils
 
+import (
+	"os"
+	"time"
 
+	"github.com/golang-jwt/jwt/v5"
+)
+
+var jwtSecret = []byte(os.Getenv("JWT_SECRET"))
+
+func CreateToken(userID string, role string) (string, error) {
+	claims := jwt.MapClaims{
+		"sub":  userID,
+		"role": role,
+		"exp":  time.Now().Add(time.Hour * 24).Unix(),
+	}
+
+	token := jwt.NewWithClaims(jwt.SigningMethodHS256, claims)
+	return token.SignedString(jwtSecret)
+}
+```  
+This utility is called during login in [auth_handler.go](https://github.com/K0d0ku/web-serv_midterm2/blob/6367c80d58d7af1e41ba796edac08c27130fffba/handlers/auth_handler.go#L89-L96):  
+```
+token, _ := utils.CreateToken(user.ID.String(), string(user.Role))
+	logger.LogEvent("UserLogin", user.ID.String(), string(user.Role), "success", map[string]interface{}{"email": req.Email})
+
+	return c.JSON(http.StatusOK, echo.Map{
+		"token":   token,
+		"role":    user.Role,
+		"expires": time.Now().Add(24 * time.Hour),
+	})
+```  
+Middleware enforces token verification on protected routes [auth_middleware.go](https://github.com/K0d0ku/web-serv_midterm2/blob/6367c80d58d7af1e41ba796edac08c27130fffba/middleware/auth_middleware.go#L17-L62):  
+```
+func AuthMiddleware(next echo.HandlerFunc) echo.HandlerFunc {
+	return func(c echo.Context) error {
+		authHeader := c.Request().Header.Get("Authorization")
+		if authHeader == "" {
+			return c.JSON(http.StatusUnauthorized, echo.Map{"error": "Missing Authorization header"})
+		}
+
+		parts := strings.Split(authHeader, " ")
+		if len(parts) != 2 || parts[0] != "Bearer" {
+			return c.JSON(http.StatusUnauthorized, echo.Map{"error": "Invalid Authorization header"})
+		}
+
+		tokenStr := parts[1]
+
+		token, err := jwt.Parse(tokenStr, func(token *jwt.Token) (interface{}, error) {
+			if _, ok := token.Method.(*jwt.SigningMethodHMAC); !ok {
+				return nil, echo.NewHTTPError(http.StatusUnauthorized, "Unexpected signing method")
+			}
+			return JWTSecret, nil
+		})
+
+		if err != nil || !token.Valid {
+			return c.JSON(http.StatusUnauthorized, echo.Map{"error": "Invalid token"})
+		}
+
+		claims, ok := token.Claims.(jwt.MapClaims)
+		if !ok {
+			return c.JSON(http.StatusUnauthorized, echo.Map{"error": "Invalid token claims"})
+		}
+
+		userIDStr, ok := claims["sub"].(string)
+		if !ok {
+			return c.JSON(http.StatusUnauthorized, echo.Map{"error": "Invalid user ID in token"})
+		}
+
+		userRepo := repositories.NewUserRepository(config.DB)
+		user, err := userRepo.GetByID(userIDStr)
+		if err != nil || user == nil {
+			return c.JSON(http.StatusUnauthorized, echo.Map{"error": "User not found"})
+		}
+
+		c.Set("user", user)
+
+		return next(c)
+	}
+}
+```
+No JWT Authorization:  
+![SwaggerUpdateUserByIDNoAuth1.png](https://github.com/K0d0ku/web-serv_midterm2/blob/main/%23images_and_files_2/test%20screenshots/api%20tests/swagger/user/SwaggerUpdateUserByIDNoAuth1.png)  
+Login to get JWT Beare Token:  
+![SwaggerUserLogin2.png](https://github.com/K0d0ku/web-serv_midterm2/blob/main/%23images_and_files_2/test%20screenshots/api%20tests/swagger/user/SwaggerUserLogin2.png)  
+JWT Authorization:  
+![SwaggerUserJWTAuthorize.png](https://github.com/K0d0ku/web-serv_midterm2/blob/main/%23images_and_files_2/test%20screenshots/api%20tests/swagger/user/SwaggerUserJWTAuthorize.png)  
+Access data after JWT Authorization: 
+![SwaggerGetAllUserAdminAccess.png](https://github.com/K0d0ku/web-serv_midterm2/blob/main/%23images_and_files_2/test%20screenshots/api%20tests/swagger/user/SwaggerGetAllUserAdminAccess.png)  
+___  
 
 ### Additional content  
-Most of the image and files content is located in: [↳Images and Files_2](https://github.com/K0d0ku/web-serv_midterm2/tree/main/%23images_and_files_2) folder  
+#### Database images
+Postgres Database files inside the Goland IDE:  
+![ApiDBKuroApiDb2.png](https://github.com/K0d0ku/web-serv_midterm2/blob/main/%23images_and_files_2/test%20screenshots/database%20images/ApiDBKuroApiDb2.png)  
+Database Scheme:  
+![KuroApiDb2Scheme.png](https://github.com/K0d0ku/web-serv_midterm2/blob/main/%23images_and_files_2/test%20screenshots/database%20images/KuroApiDb2Scheme.png)  
+Users Table:  
+![KuroApiDb2TablesUsers.png](https://github.com/K0d0ku/web-serv_midterm2/blob/main/%23images_and_files_2/test%20screenshots/database%20images/KuroApiDb2TablesUsers.png)  
+Genre Table:  
+![KuroApiDb2TablesGenre.png](https://github.com/K0d0ku/web-serv_midterm2/blob/main/%23images_and_files_2/test%20screenshots/database%20images/KuroApiDb2TablesGenre.png)  
+Music Table:  
+![KuroApiDb2TablesMusic.png](https://github.com/K0d0ku/web-serv_midterm2/blob/main/%23images_and_files_2/test%20screenshots/database%20images/KuroApiDb2TablesMusic.png)  
 
-#### Roadmap i made in .word
-[2nd-midterm.docx](#)
+Most of the images show the api endpoint responces, Jwt auth responces and RBAC based results. image and files content are is located in:   
+- [Images and Files_2](https://github.com/K0d0ku/web-serv_midterm2/tree/main/%23images_and_files_2)  
+- [process screenshots](https://github.com/K0d0ku/web-serv_midterm2/tree/main/%23images_and_files_2/process%20screenshots)  
+- [screenshots for documentation](https://github.com/K0d0ku/web-serv_midterm2/tree/main/%23images_and_files_2/screenshots%20for%20documentation)  
+- [test screenshots](https://github.com/K0d0ku/web-serv_midterm2/tree/main/%23images_and_files_2/test%20screenshots)  
+	- [api tests](https://github.com/K0d0ku/web-serv_midterm2/tree/main/%23images_and_files_2/test%20screenshots/api%20tests)  
+		- [postman](https://github.com/K0d0ku/web-serv_midterm2/tree/main/%23images_and_files_2/test%20screenshots/api%20tests/postman)  
+		- [swagger](https://github.com/K0d0ku/web-serv_midterm2/tree/main/%23images_and_files_2/test%20screenshots/api%20tests/swagger)  
+			- [genre](https://github.com/K0d0ku/web-serv_midterm2/tree/main/%23images_and_files_2/test%20screenshots/api%20tests/swagger/genre)  
+			- [music](https://github.com/K0d0ku/web-serv_midterm2/tree/main/%23images_and_files_2/test%20screenshots/api%20tests/swagger/music)  
+				- [artist](https://github.com/K0d0ku/web-serv_midterm2/tree/main/%23images_and_files_2/test%20screenshots/api%20tests/swagger/music/artist)  
+				- [listener](https://github.com/K0d0ku/web-serv_midterm2/tree/main/%23images_and_files_2/test%20screenshots/api%20tests/swagger/music/listener)  
+			- [user](https://github.com/K0d0ku/web-serv_midterm2/tree/main/%23images_and_files_2/test%20screenshots/api%20tests/swagger/user)  
+	- [database images](https://github.com/K0d0ku/web-serv_midterm2/tree/main/%23images_and_files_2/test%20screenshots/database%20images)  
