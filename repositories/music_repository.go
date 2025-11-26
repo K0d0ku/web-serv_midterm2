@@ -15,6 +15,8 @@ type MusicRepository interface {
 	GetByTitle(title string) (*models.Music, error)
 	Update(music *models.Music) error
 	Delete(id string) error
+	GetByArtistID(artistID string) ([]models.Music, error)
+	Search(query string) ([]models.Music, error)
 }
 
 type musicRepository struct {
@@ -69,4 +71,29 @@ func (r *musicRepository) Update(music *models.Music) error {
 
 func (r *musicRepository) Delete(id string) error {
 	return r.db.Delete(&models.Music{}, "id = ?", id).Error
+}
+
+func (r *musicRepository) GetByArtistID(artistID string) ([]models.Music, error) {
+	var musics []models.Music
+	err := r.db.Preload("Artist").Preload("Genre").Where("artist_id = ?", artistID).Find(&musics).Error
+	return musics, err
+}
+
+func (r *musicRepository) Search(query string) ([]models.Music, error) {
+	var results []models.Music
+
+	q := "%" + query + "%"
+
+	err := r.db.
+		Preload("Artist").
+		Preload("Genre").
+		Joins("LEFT JOIN users ON users.id = musics.artist_id").
+		Joins("LEFT JOIN genres ON genres.id = musics.genre_id").
+		Where(
+			"LOWER(musics.title) LIKE LOWER(?) OR LOWER(users.name) LIKE LOWER(?) OR LOWER(genres.name) LIKE LOWER(?)",
+			q, q, q,
+		).
+		Find(&results).Error
+
+	return results, err
 }

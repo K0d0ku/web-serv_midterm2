@@ -1,0 +1,22 @@
+{"level":"info","time":"2025-11-26T16:21:53+05:00","message":"Zerolog initialized"}
+{"level":"info","event":"AppStartup","userId":"","role":"","status":"info","message":"Initializing application","time":"2025-11-26T16:21:53+05:00","message":"AppStartup"}
+{"level":"info","event":"EnvLoad","userId":"","role":"","status":"info","message":".env loaded successfully","time":"2025-11-26T16:21:53+05:00","message":"EnvLoad"}
+{"level":"info","event":"DBConnect","userId":"","role":"","status":"info","message":"Database connection established","time":"2025-11-26T16:21:53+05:00","message":"DBConnect"}
+{"level":"info","event":"SeedAdmin","userId":"","role":"","status":"info","message":"Admin user ensured","time":"2025-11-26T16:21:53+05:00","message":"SeedAdmin"}
+{"level":"info","event":"ServerStart","userId":"","role":"","status":"info","port":8080,"time":"2025-11-26T16:21:53+05:00","message":"ServerStart"}
+{"level":"info","method":"GET","path":"/swagger/index.html","user_id":"guest","role":"guest","duration_ms":1.7349,"time":"2025-11-26T16:22:27+05:00","message":"Request completed"}
+{"level":"info","method":"GET","path":"/swagger-ui.css","user_id":"guest","role":"guest","duration_ms":15.5732,"time":"2025-11-26T16:22:27+05:00","message":"Request completed"}
+{"level":"info","method":"GET","path":"/swagger-ui-standalone-preset.js","user_id":"guest","role":"guest","duration_ms":3.9997,"time":"2025-11-26T16:22:27+05:00","message":"Request completed"}
+{"level":"info","method":"GET","path":"/swagger-ui-bundle.js","user_id":"guest","role":"guest","duration_ms":77.3074,"time":"2025-11-26T16:22:27+05:00","message":"Request completed"}
+{"level":"info","method":"GET","path":"/favicon-32x32.png","user_id":"guest","role":"guest","duration_ms":6.0022,"time":"2025-11-26T16:22:28+05:00","message":"Request completed"}
+{"level":"info","method":"GET","path":"/swagger/doc.json","user_id":"guest","role":"guest","duration_ms":5.0009,"time":"2025-11-26T16:22:28+05:00","message":"Request completed"}
+{"level":"info","event":"Search","userId":"","role":"","status":"success","count":4,"query":"ligon","time":"2025-11-26T16:23:13+05:00","message":"Search"}
+{"level":"info","method":"GET","path":"/music/search","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":16.7655,"time":"2025-11-26T16:23:13+05:00","message":"Request completed"}
+{"level":"info","event":"Search","userId":"","role":"","status":"success","count":4,"query":"ligon deez","time":"2025-11-26T16:23:30+05:00","message":"Search"}
+{"level":"info","method":"GET","path":"/music/search","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":4.39,"time":"2025-11-26T16:23:30+05:00","message":"Request completed"}
+{"level":"info","event":"Search","userId":"","role":"","status":"success","count":1,"query":"edm","time":"2025-11-26T16:23:50+05:00","message":"Search"}
+{"level":"info","method":"GET","path":"/music/search","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":4.0352,"time":"2025-11-26T16:23:50+05:00","message":"Request completed"}
+{"level":"info","event":"Search","userId":"","role":"","status":"success","count":2,"query":"jazz","time":"2025-11-26T16:24:22+05:00","message":"Search"}
+{"level":"info","method":"GET","path":"/music/search","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":16.4891,"time":"2025-11-26T16:24:22+05:00","message":"Request completed"}
+{"level":"info","event":"Search","userId":"","role":"","status":"success","count":1,"query":"rain","time":"2025-11-26T16:24:45+05:00","message":"Search"}
+{"level":"info","method":"GET","path":"/music/search","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":4.7728,"time":"2025-11-26T16:24:45+05:00","message":"Request completed"}

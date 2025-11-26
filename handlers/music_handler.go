@@ -1,6 +1,7 @@
 package handlers
 
 import (
+	"github.com/google/uuid"
 	"net/http"
 
 	"github.com/go-playground/validator/v10"
@@ -13,14 +14,16 @@ import (
 
 type MusicHandler struct {
 	MusicService services.MusicService
+	UserService  services.UserService
 	GenreService services.GenreService
 	Validator    *validator.Validate
 }
 
-func NewMusicHandler(mSvc services.MusicService, gSvc services.GenreService) *MusicHandler {
+func NewMusicHandler(mSvc services.MusicService, gSvc services.GenreService, uSvc services.UserService) *MusicHandler {
 	return &MusicHandler{
 		MusicService: mSvc,
 		GenreService: gSvc,
+		UserService:  uSvc,
 		Validator:    validator.New(),
 	}
 }
@@ -154,6 +157,109 @@ func (h *MusicHandler) DeleteGenre(c echo.Context) error {
 }
 
 // MUSIC
+
+// Search godoc
+// @Summary Search by artist, music, or genre
+// @Description Global search across music title, artist name, and genre name
+// @Tags 3Music
+// @Produce json
+// @Param q query string true "Search Query"
+// @Success 200 {array} models.Music
+// @Failure 400 {object} map[string]interface{}
+// @Failure 500 {object} map[string]interface{}
+// @Router /music/search [get]
+// @Security ApiKeyAuth
+func (h *MusicHandler) Search(c echo.Context) error {
+	query := c.QueryParam("q")
+
+	if query == "" {
+		return c.JSON(http.StatusBadRequest, echo.Map{
+			"message": "Search query is required",
+		})
+	}
+	results, err := h.MusicService.Search(query)
+	if err != nil {
+		logger.LogEvent("Search", "", "", "failed", map[string]interface{}{
+			"query": query,
+			"error": err.Error(),
+		})
+		return c.JSON(http.StatusInternalServerError, echo.Map{
+			"message": "Search failed",
+		})
+	}
+	logger.LogEvent("Search", "", "", "success", map[string]interface{}{
+		"query": query,
+		"count": len(results),
+	})
+	return c.JSON(http.StatusOK, results)
+}
+
+// GetMusicByArtistID godoc
+// @Summary Get all music by artist ID
+// @Description Fetches all music tracks for a specific artist
+// @Tags 3Music
+// @Produce json
+// @Param artistId path string true "Artist ID"
+// @Success 200 {array} models.Music
+// @Failure 400 {object} map[string]interface{}
+// @Failure 404 {object} map[string]interface{}
+// @Failure 500 {object} map[string]interface{}
+// @Router /music/artist/{artistId} [get]
+// @Security ApiKeyAuth
+func (h *MusicHandler) GetMusicByArtistID(c echo.Context) error {
+	artistID := c.Param("artistId")
+
+	// Validate UUID
+	if _, err := uuid.Parse(artistID); err != nil {
+		logger.LogEvent("GetMusicByArtistID", "", "", "failed", map[string]interface{}{
+			"artistId": artistID,
+			"error":    "Invalid UUID",
+		})
+		return c.JSON(http.StatusBadRequest, echo.Map{"message": "Invalid artist ID"})
+	}
+
+	musics, err := h.MusicService.GetByArtistID(artistID)
+	if err != nil {
+		logger.LogEvent("GetMusicByArtistID", "", "", "failed", map[string]interface{}{
+			"artistId": artistID,
+			"error":    err.Error(),
+		})
+		return c.JSON(http.StatusInternalServerError, echo.Map{"message": "Failed to fetch music"})
+	}
+
+	if len(musics) == 0 {
+		logger.LogEvent("GetMusicByArtistID", "", "", "success", map[string]interface{}{
+			"artistId": artistID,
+			"count":    0,
+		})
+		return c.JSON(http.StatusNotFound, echo.Map{"message": "No music found for this artist"})
+	}
+
+	logger.LogEvent("GetMusicByArtistID", "", "", "success", map[string]interface{}{
+		"artistId": artistID,
+		"count":    len(musics),
+	})
+	return c.JSON(http.StatusOK, musics)
+}
+
+// ListAllArtists godoc
+// @Summary List all artists
+// @Description Returns all users with role Artist
+// @Tags 3Music
+// @Produce json
+// @Success 200 {array} models.User
+// @Failure 500 {object} map[string]interface{}
+// @Router /music/artists [get]
+// @Security ApiKeyAuth
+func (h *MusicHandler) ListAllArtists(c echo.Context) error {
+	artists, err := h.UserService.ListAllArtists() // <-- call UserService
+	if err != nil {
+		logger.LogEvent("ListAllArtists", "", "", "failed", map[string]interface{}{"error": err.Error()})
+		return c.JSON(http.StatusInternalServerError, echo.Map{"message": "Failed to fetch artists"})
+	}
+	logger.LogEvent("ListAllArtists", "", "", "success", map[string]interface{}{"count": len(artists)})
+	return c.JSON(http.StatusOK, artists)
+}
 
 // GetAllMusic godoc
 // @Summary Get all music

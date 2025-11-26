@@ -16,6 +16,8 @@ type UserService interface {
 	GetByID(id string) (*models.User, error)
 	Update(userID string, updater *models.User, currentUser *models.User) (*models.User, error)
 	Delete(userID string, currentUser *models.User) error
+
+	ListAllArtists() ([]models.User, error)
 }
 
 type userService struct {
@@ -101,4 +103,8 @@ func (s *userService) Delete(userID string, currentUser *models.User) error {
 		return errors.New("access denied")
 	}
 	return s.repo.Delete(userID)
+}
+
+func (s *userService) ListAllArtists() ([]models.User, error) {
+	return s.repo.GetAllArtists()
 }

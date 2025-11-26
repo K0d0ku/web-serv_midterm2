@@ -21,6 +21,8 @@ type MusicService interface {
 
 	GetAllArtists() ([]models.User, error)
 	GetArtistByName(name string) (*models.User, error)
+	GetByArtistID(artistID string) ([]models.Music, error)
+	Search(query string) ([]models.Music, error)
 }
 
 type musicService struct {
@@ -176,6 +178,18 @@ func (s *musicService) GetArtistByName(name string) (*models.User, error) {
 		if strings.EqualFold(m.Artist.Name, name) {
 			return &m.Artist, nil
 		}
-	}
+	} //unused for now
 	return nil, errors.New("artist not found")
+}
+
+func (s *musicService) GetByArtistID(artistID string) ([]models.Music, error) {
+	return s.musicRepo.GetByArtistID(artistID)
+}
+
+func (s *musicService) Search(query string) ([]models.Music, error) {
+	query = strings.TrimSpace(query)
+	if query == "" {
+		return nil, errors.New("search query is empty")
+	}
+	return s.musicRepo.Search(query)
 }

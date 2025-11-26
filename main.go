@@ -4,6 +4,7 @@ import (
 	"github.com/google/uuid"
 	"github.com/joho/godotenv"
 	"github.com/labstack/echo/v4"
+	"github.com/labstack/echo/v4/middleware"
 	"golang.org/x/crypto/bcrypt"
 	"midterm2/config"
 	"midterm2/docs"
@@ -13,6 +14,7 @@ import (
 	"midterm2/models"
 	"midterm2/repositories"
 	"midterm2/services"
+
 	"os"
 
 	echoSwagger "github.com/swaggo/echo-swagger"
@@ -55,7 +57,7 @@ func main() {
 
 	// Handlers
 	authHandler := handlers.NewAuthHandler(userService)
-	musicHandler := handlers.NewMusicHandler(musicService, genreService)
+	musicHandler := handlers.NewMusicHandler(musicService, genreService, userService)
 
 	// Admin
 	if err := SeedAdmin(userRepo); err != nil {
@@ -66,6 +68,12 @@ func main() {
 
 	e := echo.New()
 	e.Use(mw.LoggingMiddleware)
+
+	e.Use(middleware.CORSWithConfig(middleware.CORSConfig{
+		AllowOrigins: []string{"http://localhost:5173"}, //react origin
+		AllowMethods: []string{"GET", "POST", "PUT", "DELETE"},
+		AllowHeaders: []string{"Authorization", "Content-Type"},
+	}))
 
 	// Swagger
 	docs.SwaggerInfo.Title = "Midterm2 API"
@@ -90,6 +98,9 @@ func main() {
 
 	musicGroup := e.Group("/music")
 	musicGroup.Use(mw.AuthMiddleware)
+	musicGroup.GET("/search", musicHandler.Search)
+	musicGroup.GET("/artist/:artistId", musicHandler.GetMusicByArtistID)
+	musicGroup.GET("/artists", musicHandler.ListAllArtists)
 	musicGroup.GET("", musicHandler.GetAllMusic)
 	musicGroup.GET("/:id", musicHandler.GetMusicByID)
 	musicGroup.POST("", musicHandler.CreateMusic, mw.RoleMiddleware("Artist", "Admin"))

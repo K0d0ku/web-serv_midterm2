@@ -16,6 +16,8 @@ type UserRepository interface {
 	GetAll() ([]models.User, error)
 	Update(user *models.User) error
 	Delete(id string) error
+
+	GetAllArtists() ([]models.User, error)
 }
 
 type userRepository struct {
@@ -70,4 +72,12 @@ func (r *userRepository) Update(user *models.User) error {
 
 func (r *userRepository) Delete(id string) error {
 	return r.db.Delete(&models.User{}, "id = ?", id).Error
+}
+
+func (r *userRepository) GetAllArtists() ([]models.User, error) {
+	var artists []models.User
+	if err := r.db.Where("role = ?", models.RoleArtist).Find(&artists).Error; err != nil {
+		return nil, err
+	}
+	return artists, nil
 }
