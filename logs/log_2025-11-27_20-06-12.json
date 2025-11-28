@@ -1,0 +1,87 @@
+{"level":"info","time":"2025-11-27T20:06:12+05:00","message":"Log rotated due to hour change"}
+{"level":"info","event":"GetUserByID","userId":"18bed505-4862-452c-bec9-26acbd7af9eb","role":"Listener","status":"success","id":"18bed505-4862-452c-bec9-26acbd7af9eb","time":"2025-11-27T20:06:12+05:00","message":"GetUserByID"}
+{"level":"info","method":"GET","path":"/users/18bed505-4862-452c-bec9-26acbd7af9eb","user_id":"18bed505-4862-452c-bec9-26acbd7af9eb","role":"Listener","duration_ms":15.9429,"time":"2025-11-27T20:06:12+05:00","message":"Request completed"}
+{"level":"info","event":"GetUserByID","userId":"18bed505-4862-452c-bec9-26acbd7af9eb","role":"Listener","status":"success","id":"18bed505-4862-452c-bec9-26acbd7af9eb","time":"2025-11-27T20:06:12+05:00","message":"GetUserByID"}
+{"level":"info","method":"GET","path":"/users/18bed505-4862-452c-bec9-26acbd7af9eb","user_id":"18bed505-4862-452c-bec9-26acbd7af9eb","role":"Listener","duration_ms":12.8566,"time":"2025-11-27T20:06:12+05:00","message":"Request completed"}
+{"level":"info","event":"GetUserByID","userId":"18bed505-4862-452c-bec9-26acbd7af9eb","role":"Listener","status":"success","id":"18bed505-4862-452c-bec9-26acbd7af9eb","time":"2025-11-27T20:06:14+05:00","message":"GetUserByID"}
+{"level":"info","method":"GET","path":"/users/18bed505-4862-452c-bec9-26acbd7af9eb","user_id":"18bed505-4862-452c-bec9-26acbd7af9eb","role":"Listener","duration_ms":4.7213,"time":"2025-11-27T20:06:14+05:00","message":"Request completed"}
+{"level":"info","event":"GetUserByID","userId":"18bed505-4862-452c-bec9-26acbd7af9eb","role":"Listener","status":"success","id":"18bed505-4862-452c-bec9-26acbd7af9eb","time":"2025-11-27T20:06:14+05:00","message":"GetUserByID"}
+{"level":"info","method":"GET","path":"/users/18bed505-4862-452c-bec9-26acbd7af9eb","user_id":"18bed505-4862-452c-bec9-26acbd7af9eb","role":"Listener","duration_ms":12.5171,"time":"2025-11-27T20:06:14+05:00","message":"Request completed"}
+{"level":"info","event":"GetUserByID","userId":"18bed505-4862-452c-bec9-26acbd7af9eb","role":"Listener","status":"success","id":"18bed505-4862-452c-bec9-26acbd7af9eb","time":"2025-11-27T20:06:14+05:00","message":"GetUserByID"}
+{"level":"info","method":"GET","path":"/users/18bed505-4862-452c-bec9-26acbd7af9eb","user_id":"18bed505-4862-452c-bec9-26acbd7af9eb","role":"Listener","duration_ms":13.5248,"time":"2025-11-27T20:06:14+05:00","message":"Request completed"}
+{"level":"info","event":"GetUserByID","userId":"18bed505-4862-452c-bec9-26acbd7af9eb","role":"Listener","status":"success","id":"18bed505-4862-452c-bec9-26acbd7af9eb","time":"2025-11-27T20:06:14+05:00","message":"GetUserByID"}
+{"level":"info","method":"GET","path":"/users/18bed505-4862-452c-bec9-26acbd7af9eb","user_id":"18bed505-4862-452c-bec9-26acbd7af9eb","role":"Listener","duration_ms":14.3671,"time":"2025-11-27T20:06:14+05:00","message":"Request completed"}
+{"level":"info","event":"GetUserByID","userId":"18bed505-4862-452c-bec9-26acbd7af9eb","role":"Listener","status":"success","id":"18bed505-4862-452c-bec9-26acbd7af9eb","time":"2025-11-27T20:06:14+05:00","message":"GetUserByID"}
+{"level":"info","method":"GET","path":"/users/18bed505-4862-452c-bec9-26acbd7af9eb","user_id":"18bed505-4862-452c-bec9-26acbd7af9eb","role":"Listener","duration_ms":7.3244,"time":"2025-11-27T20:06:14+05:00","message":"Request completed"}
+{"level":"info","event":"GetUserByID","userId":"18bed505-4862-452c-bec9-26acbd7af9eb","role":"Listener","status":"success","id":"18bed505-4862-452c-bec9-26acbd7af9eb","time":"2025-11-27T20:06:14+05:00","message":"GetUserByID"}
+{"level":"info","method":"GET","path":"/users/18bed505-4862-452c-bec9-26acbd7af9eb","user_id":"18bed505-4862-452c-bec9-26acbd7af9eb","role":"Listener","duration_ms":15.0186,"time":"2025-11-27T20:06:14+05:00","message":"Request completed"}
+{"level":"info","event":"GetUserByID","userId":"18bed505-4862-452c-bec9-26acbd7af9eb","role":"Listener","status":"success","id":"18bed505-4862-452c-bec9-26acbd7af9eb","time":"2025-11-27T20:06:15+05:00","message":"GetUserByID"}
+{"level":"info","method":"GET","path":"/users/18bed505-4862-452c-bec9-26acbd7af9eb","user_id":"18bed505-4862-452c-bec9-26acbd7af9eb","role":"Listener","duration_ms":2.7387,"time":"2025-11-27T20:06:15+05:00","message":"Request completed"}
+{"level":"info","event":"GetUserByID","userId":"18bed505-4862-452c-bec9-26acbd7af9eb","role":"Listener","status":"success","id":"18bed505-4862-452c-bec9-26acbd7af9eb","time":"2025-11-27T20:06:15+05:00","message":"GetUserByID"}
+{"level":"info","method":"GET","path":"/users/18bed505-4862-452c-bec9-26acbd7af9eb","user_id":"18bed505-4862-452c-bec9-26acbd7af9eb","role":"Listener","duration_ms":10.8815,"time":"2025-11-27T20:06:15+05:00","message":"Request completed"}
+{"level":"info","event":"GetUserByID","userId":"18bed505-4862-452c-bec9-26acbd7af9eb","role":"Listener","status":"success","id":"18bed505-4862-452c-bec9-26acbd7af9eb","time":"2025-11-27T20:06:16+05:00","message":"GetUserByID"}
+{"level":"info","method":"GET","path":"/users/18bed505-4862-452c-bec9-26acbd7af9eb","user_id":"18bed505-4862-452c-bec9-26acbd7af9eb","role":"Listener","duration_ms":2.523,"time":"2025-11-27T20:06:16+05:00","message":"Request completed"}
+{"level":"info","event":"GetUserByID","userId":"18bed505-4862-452c-bec9-26acbd7af9eb","role":"Listener","status":"success","id":"18bed505-4862-452c-bec9-26acbd7af9eb","time":"2025-11-27T20:06:16+05:00","message":"GetUserByID"}
+{"level":"info","method":"GET","path":"/users/18bed505-4862-452c-bec9-26acbd7af9eb","user_id":"18bed505-4862-452c-bec9-26acbd7af9eb","role":"Listener","duration_ms":30.1823,"time":"2025-11-27T20:06:16+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/users/18bed505-4862-452c-bec9-26acbd7af9eb","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-27T20:08:21+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/users/18bed505-4862-452c-bec9-26acbd7af9eb","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-27T20:08:21+05:00","message":"Request completed"}
+{"level":"info","event":"GetUserByID","userId":"18bed505-4862-452c-bec9-26acbd7af9eb","role":"Listener","status":"success","id":"18bed505-4862-452c-bec9-26acbd7af9eb","time":"2025-11-27T20:08:21+05:00","message":"GetUserByID"}
+{"level":"info","method":"GET","path":"/users/18bed505-4862-452c-bec9-26acbd7af9eb","user_id":"18bed505-4862-452c-bec9-26acbd7af9eb","role":"Listener","duration_ms":10.2749,"time":"2025-11-27T20:08:21+05:00","message":"Request completed"}
+{"level":"info","event":"GetUserByID","userId":"18bed505-4862-452c-bec9-26acbd7af9eb","role":"Listener","status":"success","id":"18bed505-4862-452c-bec9-26acbd7af9eb","time":"2025-11-27T20:08:21+05:00","message":"GetUserByID"}
+{"level":"info","method":"GET","path":"/users/18bed505-4862-452c-bec9-26acbd7af9eb","user_id":"18bed505-4862-452c-bec9-26acbd7af9eb","role":"Listener","duration_ms":7.5607,"time":"2025-11-27T20:08:21+05:00","message":"Request completed"}
+{"level":"info","event":"GetUserByID","userId":"18bed505-4862-452c-bec9-26acbd7af9eb","role":"Listener","status":"success","id":"18bed505-4862-452c-bec9-26acbd7af9eb","time":"2025-11-27T20:08:25+05:00","message":"GetUserByID"}
+{"level":"info","method":"GET","path":"/users/18bed505-4862-452c-bec9-26acbd7af9eb","user_id":"18bed505-4862-452c-bec9-26acbd7af9eb","role":"Listener","duration_ms":3.1134,"time":"2025-11-27T20:08:25+05:00","message":"Request completed"}
+{"level":"info","event":"GetUserByID","userId":"18bed505-4862-452c-bec9-26acbd7af9eb","role":"Listener","status":"success","id":"18bed505-4862-452c-bec9-26acbd7af9eb","time":"2025-11-27T20:08:25+05:00","message":"GetUserByID"}
+{"level":"info","method":"GET","path":"/users/18bed505-4862-452c-bec9-26acbd7af9eb","user_id":"18bed505-4862-452c-bec9-26acbd7af9eb","role":"Listener","duration_ms":1.8673,"time":"2025-11-27T20:08:25+05:00","message":"Request completed"}
+{"level":"info","method":"GET","path":"/swagger/index.html","user_id":"guest","role":"guest","duration_ms":17.3934,"time":"2025-11-27T20:09:17+05:00","message":"Request completed"}
+{"level":"info","method":"GET","path":"/swagger-ui-bundle.js","user_id":"guest","role":"guest","duration_ms":6.3643,"time":"2025-11-27T20:09:17+05:00","message":"Request completed"}
+{"level":"info","method":"GET","path":"/swagger-ui.css","user_id":"guest","role":"guest","duration_ms":28.0013,"time":"2025-11-27T20:09:17+05:00","message":"Request completed"}
+{"level":"info","method":"GET","path":"/swagger-ui-standalone-preset.js","user_id":"guest","role":"guest","duration_ms":119.0645,"time":"2025-11-27T20:09:17+05:00","message":"Request completed"}
+{"level":"info","method":"GET","path":"/favicon-32x32.png","user_id":"guest","role":"guest","duration_ms":0.996,"time":"2025-11-27T20:09:18+05:00","message":"Request completed"}
+{"level":"info","method":"GET","path":"/swagger/doc.json","user_id":"guest","role":"guest","duration_ms":4.9983,"time":"2025-11-27T20:09:18+05:00","message":"Request completed"}
+{"level":"info","event":"UserLogin","userId":"1919c271-eceb-455a-ac46-0c371664dbe4","role":"Listener","status":"success","email":"selin.yura@example.com","time":"2025-11-27T20:10:01+05:00","message":"UserLogin"}
+{"level":"info","method":"POST","path":"/login","user_id":"guest","role":"guest","duration_ms":99.8236,"time":"2025-11-27T20:10:01+05:00","message":"Request completed"}
+{"level":"info","event":"Search","userId":"","role":"","status":"success","count":4,"query":"Ligon Deez","time":"2025-11-27T20:10:32+05:00","message":"Search"}
+{"level":"info","method":"GET","path":"/music/search","user_id":"1919c271-eceb-455a-ac46-0c371664dbe4","role":"Listener","duration_ms":115.1692,"time":"2025-11-27T20:10:32+05:00","message":"Request completed"}
+{"level":"info","method":"GET","path":"/swagger/index.html","user_id":"guest","role":"guest","duration_ms":15.0844,"time":"2025-11-27T20:10:36+05:00","message":"Request completed"}
+{"level":"info","method":"GET","path":"/swagger-ui.css","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-27T20:10:37+05:00","message":"Request completed"}
+{"level":"info","method":"GET","path":"/swagger-ui-bundle.js","user_id":"guest","role":"guest","duration_ms":5.9988,"time":"2025-11-27T20:10:37+05:00","message":"Request completed"}
+{"level":"info","method":"GET","path":"/swagger-ui-standalone-preset.js","user_id":"guest","role":"guest","duration_ms":2.0005,"time":"2025-11-27T20:10:37+05:00","message":"Request completed"}
+{"level":"info","method":"GET","path":"/favicon-32x32.png","user_id":"guest","role":"guest","duration_ms":0.9972,"time":"2025-11-27T20:10:37+05:00","message":"Request completed"}
+{"level":"info","method":"GET","path":"/swagger/doc.json","user_id":"guest","role":"guest","duration_ms":0.7339,"time":"2025-11-27T20:10:37+05:00","message":"Request completed"}
+{"level":"info","event":"UserLogin","userId":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","status":"success","email":"admin@example.com","time":"2025-11-27T20:14:20+05:00","message":"UserLogin"}
+{"level":"info","method":"POST","path":"/login","user_id":"guest","role":"guest","duration_ms":136.737,"time":"2025-11-27T20:14:20+05:00","message":"Request completed"}
+{"level":"info","event":"Search","userId":"","role":"","status":"success","count":4,"query":"Ligon Deez","time":"2025-11-27T20:14:56+05:00","message":"Search"}
+{"level":"info","method":"GET","path":"/music/search","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":10.7702,"time":"2025-11-27T20:14:56+05:00","message":"Request completed"}
+{"level":"info","event":"Search","userId":"","role":"","status":"success","count":1,"query":"Bassline Ritual","time":"2025-11-27T20:16:50+05:00","message":"Search"}
+{"level":"info","method":"GET","path":"/music/search","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":188.958,"time":"2025-11-27T20:16:50+05:00","message":"Request completed"}
+{"level":"info","event":"Search","userId":"","role":"","status":"success","count":2,"query":"Synthwave","time":"2025-11-27T20:18:12+05:00","message":"Search"}
+{"level":"info","method":"GET","path":"/music/search","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":11.5558,"time":"2025-11-27T20:18:12+05:00","message":"Request completed"}
+{"level":"info","event":"Search","userId":"","role":"","status":"success","count":4,"query":"ligon deez","time":"2025-11-27T20:18:58+05:00","message":"Search"}
+{"level":"info","method":"GET","path":"/music/search","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":5.7516,"time":"2025-11-27T20:18:58+05:00","message":"Request completed"}
+{"level":"info","event":"Search","userId":"","role":"","status":"success","count":2,"query":"synthwave","time":"2025-11-27T20:21:35+05:00","message":"Search"}
+{"level":"info","method":"GET","path":"/music/search","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":8.5896,"time":"2025-11-27T20:21:35+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/music/search","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-27T20:52:04+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/music/search","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-27T20:52:04+05:00","message":"Request completed"}
+{"level":"info","event":"Search","userId":"","role":"","status":"success","count":4,"query":"ligon deez","time":"2025-11-27T20:52:04+05:00","message":"Search"}
+{"level":"info","method":"GET","path":"/music/search","user_id":"18bed505-4862-452c-bec9-26acbd7af9eb","role":"Listener","duration_ms":15.6742,"time":"2025-11-27T20:52:04+05:00","message":"Request completed"}
+{"level":"info","event":"Search","userId":"","role":"","status":"success","count":4,"query":"ligon deez","time":"2025-11-27T20:52:04+05:00","message":"Search"}
+{"level":"info","method":"GET","path":"/music/search","user_id":"18bed505-4862-452c-bec9-26acbd7af9eb","role":"Listener","duration_ms":9.8182,"time":"2025-11-27T20:52:04+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/music/search","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-27T20:55:33+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/music/search","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-27T20:55:33+05:00","message":"Request completed"}
+{"level":"info","event":"Search","userId":"","role":"","status":"success","count":1,"query":"Fusion Pulse","time":"2025-11-27T20:55:33+05:00","message":"Search"}
+{"level":"info","method":"GET","path":"/music/search","user_id":"18bed505-4862-452c-bec9-26acbd7af9eb","role":"Listener","duration_ms":17.7394,"time":"2025-11-27T20:55:33+05:00","message":"Request completed"}
+{"level":"info","event":"Search","userId":"","role":"","status":"success","count":1,"query":"Fusion Pulse","time":"2025-11-27T20:55:33+05:00","message":"Search"}
+{"level":"info","method":"GET","path":"/music/search","user_id":"18bed505-4862-452c-bec9-26acbd7af9eb","role":"Listener","duration_ms":10.3304,"time":"2025-11-27T20:55:33+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/music/search","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-27T20:56:05+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/music/search","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-27T20:56:05+05:00","message":"Request completed"}
+{"level":"info","event":"Search","userId":"","role":"","status":"success","count":2,"query":"Synthwave","time":"2025-11-27T20:56:05+05:00","message":"Search"}
+{"level":"info","method":"GET","path":"/music/search","user_id":"18bed505-4862-452c-bec9-26acbd7af9eb","role":"Listener","duration_ms":16.1673,"time":"2025-11-27T20:56:05+05:00","message":"Request completed"}
+{"level":"info","event":"Search","userId":"","role":"","status":"success","count":2,"query":"Synthwave","time":"2025-11-27T20:56:05+05:00","message":"Search"}
+{"level":"info","method":"GET","path":"/music/search","user_id":"18bed505-4862-452c-bec9-26acbd7af9eb","role":"Listener","duration_ms":15.8289,"time":"2025-11-27T20:56:05+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/music/search","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-27T20:56:20+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/music/search","user_id":"guest","role":"guest","duration_ms":2.2397,"time":"2025-11-27T20:56:20+05:00","message":"Request completed"}
+{"level":"info","event":"Search","userId":"","role":"","status":"success","count":4,"query":"Ligon Deez","time":"2025-11-27T20:56:20+05:00","message":"Search"}
+{"level":"info","method":"GET","path":"/music/search","user_id":"18bed505-4862-452c-bec9-26acbd7af9eb","role":"Listener","duration_ms":4.9084,"time":"2025-11-27T20:56:20+05:00","message":"Request completed"}
+{"level":"info","event":"Search","userId":"","role":"","status":"success","count":4,"query":"Ligon Deez","time":"2025-11-27T20:56:20+05:00","message":"Search"}
+{"level":"info","method":"GET","path":"/music/search","user_id":"18bed505-4862-452c-bec9-26acbd7af9eb","role":"Listener","duration_ms":5.9896,"time":"2025-11-27T20:56:20+05:00","message":"Request completed"}

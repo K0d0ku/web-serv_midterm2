@@ -15,8 +15,10 @@ type MusicRepository interface {
 	GetByTitle(title string) (*models.Music, error)
 	Update(music *models.Music) error
 	Delete(id string) error
+
 	GetByArtistID(artistID string) ([]models.Music, error)
 	Search(query string) ([]models.Music, error)
+	GetArtistByID(artistID string) (*models.User, error)
 }
 
 type musicRepository struct {
@@ -96,4 +98,14 @@ func (r *musicRepository) Search(query string) ([]models.Music, error) {
 		Find(&results).Error
 
 	return results, err
+}
+
+func (r *musicRepository) GetArtistByID(artistID string) (*models.User, error) {
+	var artist models.User
+	result := r.db.Where("id = ? AND role = ?", artistID, "Artist").First(&artist)
+
+	if errors.Is(result.Error, gorm.ErrRecordNotFound) {
+		return nil, nil
+	}
+	return &artist, result.Error
 }

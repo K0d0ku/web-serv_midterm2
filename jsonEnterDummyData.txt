@@ -227,3 +227,21 @@ Music:
   "file_url": "http://localhost/files/electric_breeze.mp3",
   "genre_id": "b965e475-468f-4dbd-9118-69f0e5dd3dbf"
 }
+
+
+React:
+Auth: # POST   http://localhost:8080/register         → Register a new user
+Artist:
+{
+Mail - ReactTestArtist@example.com
+Name - ReactArtist
+password - ReactArtist123
+role - artist
+}
+Listener:
+{
+Mail - ReactTestListener@example.com
+Name - ReactListener
+password - ReactListener123
+role - listener
+}

@@ -1,0 +1,144 @@
+{"level":"info","time":"2025-11-28T20:00:49+05:00","message":"Log rotated due to hour change"}
+{"level":"info","event":"ListAllArtists","userId":"","role":"","status":"success","count":5,"time":"2025-11-28T20:00:49+05:00","message":"ListAllArtists"}
+{"level":"info","method":"GET","path":"/music/artists","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":7.9039,"time":"2025-11-28T20:00:49+05:00","message":"Request completed"}
+{"level":"info","event":"ListAllArtists","userId":"","role":"","status":"success","count":5,"time":"2025-11-28T20:02:11+05:00","message":"ListAllArtists"}
+{"level":"info","method":"GET","path":"/music/artists","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":3.9437,"time":"2025-11-28T20:02:11+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/music/322652e9-8b48-4fc7-a8ee-ffec42ca50a3","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-28T20:03:17+05:00","message":"Request completed"}
+{"level":"info","event":"GetMusicByID","userId":"","role":"","status":"success","id":"322652e9-8b48-4fc7-a8ee-ffec42ca50a3","time":"2025-11-28T20:03:17+05:00","message":"GetMusicByID"}
+{"level":"info","method":"GET","path":"/music/322652e9-8b48-4fc7-a8ee-ffec42ca50a3","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":10.6378,"time":"2025-11-28T20:03:17+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/music/artist-data/e9317a12-1862-468e-81ea-221452936fba","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-28T20:03:41+05:00","message":"Request completed"}
+{"level":"info","method":"GET","path":"/music/artist-data/e9317a12-1862-468e-81ea-221452936fba","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":6.1607,"time":"2025-11-28T20:03:41+05:00","message":"Request completed"}
+{"level":"info","method":"GET","path":"/music/artist-data/e9317a12-1862-468e-81ea-221452936fba","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":1.1773,"time":"2025-11-28T20:04:51+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/music/artist/e9317a12-1862-468e-81ea-221452936fba","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-28T20:06:24+05:00","message":"Request completed"}
+{"level":"info","event":"GetMusicByArtistID","userId":"","role":"","status":"success","artistId":"e9317a12-1862-468e-81ea-221452936fba","count":4,"time":"2025-11-28T20:06:24+05:00","message":"GetMusicByArtistID"}
+{"level":"info","method":"GET","path":"/music/artist/e9317a12-1862-468e-81ea-221452936fba","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":3.1232,"time":"2025-11-28T20:06:24+05:00","message":"Request completed"}
+{"level":"info","event":"CreateMusic","userId":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","status":"success","musicId":"981f2a67-9e90-4f1d-9716-1adcc0422bbd","title":"stringsong","time":"2025-11-28T20:07:28+05:00","message":"CreateMusic"}
+{"level":"info","method":"POST","path":"/music","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":36.0071,"time":"2025-11-28T20:07:28+05:00","message":"Request completed"}
+{"level":"info","event":"UpdateMusic","userId":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","status":"success","musicId":"981f2a67-9e90-4f1d-9716-1adcc0422bbd","time":"2025-11-28T20:10:17+05:00","message":"UpdateMusic"}
+{"level":"info","method":"PUT","path":"/music/981f2a67-9e90-4f1d-9716-1adcc0422bbd","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":10.1192,"time":"2025-11-28T20:10:17+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/music/981f2a67-9e90-4f1d-9716-1adcc0422bbd","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-28T20:12:07+05:00","message":"Request completed"}
+{"level":"info","event":"DeleteMusic","userId":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","status":"success","musicId":"981f2a67-9e90-4f1d-9716-1adcc0422bbd","time":"2025-11-28T20:12:07+05:00","message":"DeleteMusic"}
+{"level":"info","method":"DELETE","path":"/music/981f2a67-9e90-4f1d-9716-1adcc0422bbd","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":14.6652,"time":"2025-11-28T20:12:07+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/music","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-28T20:14:51+05:00","message":"Request completed"}
+{"level":"info","event":"GetAllMusic","userId":"","role":"","status":"success","count":16,"time":"2025-11-28T20:14:51+05:00","message":"GetAllMusic"}
+{"level":"info","method":"GET","path":"/music","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":4.9848,"time":"2025-11-28T20:14:51+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/music/artists","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-28T20:14:53+05:00","message":"Request completed"}
+{"level":"info","event":"ListAllArtists","userId":"","role":"","status":"success","count":5,"time":"2025-11-28T20:14:53+05:00","message":"ListAllArtists"}
+{"level":"info","method":"GET","path":"/music/artists","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":2.7561,"time":"2025-11-28T20:14:53+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/users","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-28T20:14:59+05:00","message":"Request completed"}
+{"level":"info","event":"ListAllUsers","userId":"","role":"","status":"success","count":11,"time":"2025-11-28T20:14:59+05:00","message":"ListAllUsers"}
+{"level":"info","method":"GET","path":"/users","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":1.6738,"time":"2025-11-28T20:14:59+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/users/bcc13472-5dd0-4a5b-bd2f-67aacce5e39c","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-28T20:15:18+05:00","message":"Request completed"}
+{"level":"info","event":"GetUserByID","userId":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","status":"success","id":"bcc13472-5dd0-4a5b-bd2f-67aacce5e39c","time":"2025-11-28T20:15:18+05:00","message":"GetUserByID"}
+{"level":"info","method":"GET","path":"/users/bcc13472-5dd0-4a5b-bd2f-67aacce5e39c","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":1.9124,"time":"2025-11-28T20:15:18+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/music/artist-data/bcc13472-5dd0-4a5b-bd2f-67aacce5e39c","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-28T20:15:29+05:00","message":"Request completed"}
+{"level":"info","method":"GET","path":"/music/artist-data/bcc13472-5dd0-4a5b-bd2f-67aacce5e39c","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":0.734,"time":"2025-11-28T20:15:29+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/music/artist/bcc13472-5dd0-4a5b-bd2f-67aacce5e39c","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-28T20:15:31+05:00","message":"Request completed"}
+{"level":"info","event":"GetMusicByArtistID","userId":"","role":"","status":"success","artistId":"bcc13472-5dd0-4a5b-bd2f-67aacce5e39c","count":4,"time":"2025-11-28T20:15:31+05:00","message":"GetMusicByArtistID"}
+{"level":"info","method":"GET","path":"/music/artist/bcc13472-5dd0-4a5b-bd2f-67aacce5e39c","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":6.7521,"time":"2025-11-28T20:15:31+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/users/193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-28T20:17:11+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/users/193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-28T20:17:11+05:00","message":"Request completed"}
+{"level":"info","event":"GetUserByID","userId":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","status":"success","id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","time":"2025-11-28T20:17:11+05:00","message":"GetUserByID"}
+{"level":"info","method":"GET","path":"/users/193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":3.0869,"time":"2025-11-28T20:17:11+05:00","message":"Request completed"}
+{"level":"info","event":"GetUserByID","userId":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","status":"success","id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","time":"2025-11-28T20:17:11+05:00","message":"GetUserByID"}
+{"level":"info","method":"GET","path":"/users/193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":12.9556,"time":"2025-11-28T20:17:11+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/login","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-28T20:26:50+05:00","message":"Request completed"}
+{"level":"info","event":"UserLogin","userId":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","status":"success","email":"admin@example.com","time":"2025-11-28T20:26:50+05:00","message":"UserLogin"}
+{"level":"info","method":"POST","path":"/login","user_id":"guest","role":"guest","duration_ms":89.0464,"time":"2025-11-28T20:26:50+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/users","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-28T20:26:53+05:00","message":"Request completed"}
+{"level":"info","event":"ListAllUsers","userId":"","role":"","status":"success","count":11,"time":"2025-11-28T20:26:53+05:00","message":"ListAllUsers"}
+{"level":"info","method":"GET","path":"/users","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":2.6497,"time":"2025-11-28T20:26:53+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/users/bcc13472-5dd0-4a5b-bd2f-67aacce5e39c","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-28T20:27:04+05:00","message":"Request completed"}
+{"level":"info","event":"GetUserByID","userId":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","status":"success","id":"bcc13472-5dd0-4a5b-bd2f-67aacce5e39c","time":"2025-11-28T20:27:04+05:00","message":"GetUserByID"}
+{"level":"info","method":"GET","path":"/users/bcc13472-5dd0-4a5b-bd2f-67aacce5e39c","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":1.876,"time":"2025-11-28T20:27:04+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/music","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-28T20:27:11+05:00","message":"Request completed"}
+{"level":"info","event":"GetAllMusic","userId":"","role":"","status":"success","count":16,"time":"2025-11-28T20:27:11+05:00","message":"GetAllMusic"}
+{"level":"info","method":"GET","path":"/music","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":6.3129,"time":"2025-11-28T20:27:11+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/music/artists","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-28T20:27:21+05:00","message":"Request completed"}
+{"level":"info","event":"ListAllArtists","userId":"","role":"","status":"success","count":5,"time":"2025-11-28T20:27:21+05:00","message":"ListAllArtists"}
+{"level":"info","method":"GET","path":"/music/artists","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":1.8764,"time":"2025-11-28T20:27:21+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/music/322652e9-8b48-4fc7-a8ee-ffec42ca50a3","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-28T20:27:27+05:00","message":"Request completed"}
+{"level":"info","event":"GetMusicByID","userId":"","role":"","status":"success","id":"322652e9-8b48-4fc7-a8ee-ffec42ca50a3","time":"2025-11-28T20:27:27+05:00","message":"GetMusicByID"}
+{"level":"info","method":"GET","path":"/music/322652e9-8b48-4fc7-a8ee-ffec42ca50a3","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":3.0283,"time":"2025-11-28T20:27:27+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/music/artist-data/bcc13472-5dd0-4a5b-bd2f-67aacce5e39c","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-28T20:27:38+05:00","message":"Request completed"}
+{"level":"info","method":"GET","path":"/music/artist-data/bcc13472-5dd0-4a5b-bd2f-67aacce5e39c","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":0.9165,"time":"2025-11-28T20:27:38+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/music/artist/bcc13472-5dd0-4a5b-bd2f-67aacce5e39c","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-28T20:27:46+05:00","message":"Request completed"}
+{"level":"info","event":"GetMusicByArtistID","userId":"","role":"","status":"success","artistId":"bcc13472-5dd0-4a5b-bd2f-67aacce5e39c","count":4,"time":"2025-11-28T20:27:46+05:00","message":"GetMusicByArtistID"}
+{"level":"info","method":"GET","path":"/music/artist/bcc13472-5dd0-4a5b-bd2f-67aacce5e39c","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":2.8882,"time":"2025-11-28T20:27:46+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/music","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-28T20:29:14+05:00","message":"Request completed"}
+{"level":"info","event":"CreateMusic","userId":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","status":"success","musicId":"20903cd9-d740-47ca-94ef-3731ea6f9639","title":"stringsong","time":"2025-11-28T20:29:14+05:00","message":"CreateMusic"}
+{"level":"info","method":"POST","path":"/music","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":26.0566,"time":"2025-11-28T20:29:14+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/music/20903cd9-d740-47ca-94ef-3731ea6f9639","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-28T20:29:53+05:00","message":"Request completed"}
+{"level":"info","event":"UpdateMusic","userId":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","status":"success","musicId":"20903cd9-d740-47ca-94ef-3731ea6f9639","time":"2025-11-28T20:29:53+05:00","message":"UpdateMusic"}
+{"level":"info","method":"PUT","path":"/music/20903cd9-d740-47ca-94ef-3731ea6f9639","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":8.6412,"time":"2025-11-28T20:29:53+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/music/20903cd9-d740-47ca-94ef-3731ea6f9639","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-28T20:30:07+05:00","message":"Request completed"}
+{"level":"info","event":"DeleteMusic","userId":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","status":"success","musicId":"20903cd9-d740-47ca-94ef-3731ea6f9639","time":"2025-11-28T20:30:07+05:00","message":"DeleteMusic"}
+{"level":"info","method":"DELETE","path":"/music/20903cd9-d740-47ca-94ef-3731ea6f9639","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":7.1309,"time":"2025-11-28T20:30:07+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/genres","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-28T20:30:22+05:00","message":"Request completed"}
+{"level":"info","event":"GetAllGenres","userId":"","role":"","status":"success","count":10,"time":"2025-11-28T20:30:22+05:00","message":"GetAllGenres"}
+{"level":"info","method":"GET","path":"/genres","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":2.5346,"time":"2025-11-28T20:30:22+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/genres/7596ac84-75f7-4e0d-b65d-816b354c9127","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-28T20:30:29+05:00","message":"Request completed"}
+{"level":"info","event":"GetGenreByID","userId":"","role":"","status":"success","id":"7596ac84-75f7-4e0d-b65d-816b354c9127","time":"2025-11-28T20:30:29+05:00","message":"GetGenreByID"}
+{"level":"info","method":"GET","path":"/genres/7596ac84-75f7-4e0d-b65d-816b354c9127","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":6.3166,"time":"2025-11-28T20:30:29+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/users/97365234-3d4b-470c-a368-b514b73adfe8","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-28T20:32:02+05:00","message":"Request completed"}
+{"level":"info","event":"DeleteUser","userId":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","status":"success","deletedId":"97365234-3d4b-470c-a368-b514b73adfe8","time":"2025-11-28T20:32:02+05:00","message":"DeleteUser"}
+{"level":"info","method":"DELETE","path":"/users/97365234-3d4b-470c-a368-b514b73adfe8","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":9.7633,"time":"2025-11-28T20:32:02+05:00","message":"Request completed"}
+{"level":"info","event":"UserRegister","userId":"8972cc93-65d8-4e91-aaca-cc929b6faec9","role":"Artist","status":"success","email":"string@mail.com","time":"2025-11-28T20:33:17+05:00","message":"UserRegister"}
+{"level":"info","method":"POST","path":"/register","user_id":"guest","role":"guest","duration_ms":111.7959,"time":"2025-11-28T20:33:17+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/genres","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-28T20:40:12+05:00","message":"Request completed"}
+{"level":"info","event":"GetAllGenres","userId":"","role":"","status":"success","count":10,"time":"2025-11-28T20:40:13+05:00","message":"GetAllGenres"}
+{"level":"info","method":"GET","path":"/genres","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":3.4872,"time":"2025-11-28T20:40:13+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/music","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-28T20:42:51+05:00","message":"Request completed"}
+{"level":"info","event":"GetAllMusic","userId":"","role":"","status":"success","count":16,"time":"2025-11-28T20:42:51+05:00","message":"GetAllMusic"}
+{"level":"info","method":"GET","path":"/music","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":7.326,"time":"2025-11-28T20:42:51+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/users","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-28T20:42:55+05:00","message":"Request completed"}
+{"level":"info","event":"ListAllUsers","userId":"","role":"","status":"success","count":11,"time":"2025-11-28T20:42:55+05:00","message":"ListAllUsers"}
+{"level":"info","method":"GET","path":"/users","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":2.2129,"time":"2025-11-28T20:42:55+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/music/artists","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-28T20:45:33+05:00","message":"Request completed"}
+{"level":"info","event":"ListAllArtists","userId":"","role":"","status":"success","count":5,"time":"2025-11-28T20:45:33+05:00","message":"ListAllArtists"}
+{"level":"info","method":"GET","path":"/music/artists","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":2.3802,"time":"2025-11-28T20:45:33+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/genres","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-28T20:46:58+05:00","message":"Request completed"}
+{"level":"info","event":"GetAllGenres","userId":"","role":"","status":"success","count":10,"time":"2025-11-28T20:46:58+05:00","message":"GetAllGenres"}
+{"level":"info","method":"GET","path":"/genres","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":1.3069,"time":"2025-11-28T20:46:58+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/users","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-28T20:51:16+05:00","message":"Request completed"}
+{"level":"info","event":"ListAllUsers","userId":"","role":"","status":"success","count":11,"time":"2025-11-28T20:51:16+05:00","message":"ListAllUsers"}
+{"level":"info","method":"GET","path":"/users","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":2.5087,"time":"2025-11-28T20:51:16+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/users/e9317a12-1862-468e-81ea-221452936fba","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-28T20:51:21+05:00","message":"Request completed"}
+{"level":"info","event":"GetUserByID","userId":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","status":"success","id":"e9317a12-1862-468e-81ea-221452936fba","time":"2025-11-28T20:51:21+05:00","message":"GetUserByID"}
+{"level":"info","method":"GET","path":"/users/e9317a12-1862-468e-81ea-221452936fba","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":1.8173,"time":"2025-11-28T20:51:21+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/music","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-28T20:51:27+05:00","message":"Request completed"}
+{"level":"info","event":"GetAllMusic","userId":"","role":"","status":"success","count":16,"time":"2025-11-28T20:51:27+05:00","message":"GetAllMusic"}
+{"level":"info","method":"GET","path":"/music","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":4.2592,"time":"2025-11-28T20:51:27+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/music/artists","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-28T20:51:36+05:00","message":"Request completed"}
+{"level":"info","event":"ListAllArtists","userId":"","role":"","status":"success","count":5,"time":"2025-11-28T20:51:36+05:00","message":"ListAllArtists"}
+{"level":"info","method":"GET","path":"/music/artists","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":2.1222,"time":"2025-11-28T20:51:36+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/music/322652e9-8b48-4fc7-a8ee-ffec42ca50a3","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-28T20:51:41+05:00","message":"Request completed"}
+{"level":"info","event":"GetMusicByID","userId":"","role":"","status":"success","id":"322652e9-8b48-4fc7-a8ee-ffec42ca50a3","time":"2025-11-28T20:51:41+05:00","message":"GetMusicByID"}
+{"level":"info","method":"GET","path":"/music/322652e9-8b48-4fc7-a8ee-ffec42ca50a3","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":6.1202,"time":"2025-11-28T20:51:41+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/music/artist-data/e9317a12-1862-468e-81ea-221452936fba","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-28T20:51:50+05:00","message":"Request completed"}
+{"level":"info","method":"GET","path":"/music/artist-data/e9317a12-1862-468e-81ea-221452936fba","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":2.3475,"time":"2025-11-28T20:51:50+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/music/artist/e9317a12-1862-468e-81ea-221452936fba","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-28T20:51:55+05:00","message":"Request completed"}
+{"level":"info","event":"GetMusicByArtistID","userId":"","role":"","status":"success","artistId":"e9317a12-1862-468e-81ea-221452936fba","count":4,"time":"2025-11-28T20:51:55+05:00","message":"GetMusicByArtistID"}
+{"level":"info","method":"GET","path":"/music/artist/e9317a12-1862-468e-81ea-221452936fba","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":9.5166,"time":"2025-11-28T20:51:55+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/genres","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-28T20:52:04+05:00","message":"Request completed"}
+{"level":"info","event":"GetAllGenres","userId":"","role":"","status":"success","count":10,"time":"2025-11-28T20:52:04+05:00","message":"GetAllGenres"}
+{"level":"info","method":"GET","path":"/genres","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":8.9971,"time":"2025-11-28T20:52:04+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/genres/f98c44d1-2b16-4a97-af18-54193c92edf1","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-28T20:52:10+05:00","message":"Request completed"}
+{"level":"info","event":"GetGenreByID","userId":"","role":"","status":"success","id":"f98c44d1-2b16-4a97-af18-54193c92edf1","time":"2025-11-28T20:52:10+05:00","message":"GetGenreByID"}
+{"level":"info","method":"GET","path":"/genres/f98c44d1-2b16-4a97-af18-54193c92edf1","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":2.0358,"time":"2025-11-28T20:52:10+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/users/193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-28T20:52:21+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/users/193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-28T20:52:21+05:00","message":"Request completed"}
+{"level":"info","event":"GetUserByID","userId":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","status":"success","id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","time":"2025-11-28T20:52:21+05:00","message":"GetUserByID"}
+{"level":"info","method":"GET","path":"/users/193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":9.4581,"time":"2025-11-28T20:52:21+05:00","message":"Request completed"}
+{"level":"info","event":"GetUserByID","userId":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","status":"success","id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","time":"2025-11-28T20:52:21+05:00","message":"GetUserByID"}
+{"level":"info","method":"GET","path":"/users/193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":33.5525,"time":"2025-11-28T20:52:21+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/login","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-28T20:52:31+05:00","message":"Request completed"}
+{"level":"info","event":"UserLogin","userId":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","status":"success","email":"admin@example.com","time":"2025-11-28T20:52:31+05:00","message":"UserLogin"}
+{"level":"info","method":"POST","path":"/login","user_id":"guest","role":"guest","duration_ms":86.5401,"time":"2025-11-28T20:52:31+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/users/193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-28T20:52:41+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/users/193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-28T20:52:41+05:00","message":"Request completed"}
+{"level":"info","event":"GetUserByID","userId":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","status":"success","id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","time":"2025-11-28T20:52:41+05:00","message":"GetUserByID"}
+{"level":"info","method":"GET","path":"/users/193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":6.9989,"time":"2025-11-28T20:52:41+05:00","message":"Request completed"}
+{"level":"info","event":"GetUserByID","userId":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","status":"success","id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","time":"2025-11-28T20:52:41+05:00","message":"GetUserByID"}
+{"level":"info","method":"GET","path":"/users/193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":2.7709,"time":"2025-11-28T20:52:41+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/login","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-28T21:09:49+05:00","message":"Request completed"}

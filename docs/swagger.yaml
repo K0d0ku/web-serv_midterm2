@@ -525,6 +525,42 @@ paths:
       summary: Update music
       tags:
       - 3Music
+  /music/artist-data/{id}:
+    get:
+      description: Fetch artist info by ID, only valid if user is an Artist
+      parameters:
+      - description: Artist ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.User'
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties: true
+            type: object
+        "403":
+          description: Forbidden
+          schema:
+            additionalProperties: true
+            type: object
+        "404":
+          description: Not Found
+          schema:
+            additionalProperties: true
+            type: object
+      security:
+      - ApiKeyAuth: []
+      summary: Get artist data by ID
+      tags:
+      - 3Music
   /music/artist/{artistId}:
     get:
       description: Fetches all music tracks for a specific artist

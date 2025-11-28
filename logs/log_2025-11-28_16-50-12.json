@@ -1,0 +1,24 @@
+{"level":"info","time":"2025-11-28T16:50:12+05:00","message":"Zerolog initialized"}
+{"level":"info","event":"AppStartup","userId":"","role":"","status":"info","message":"Initializing application","time":"2025-11-28T16:50:12+05:00","message":"AppStartup"}
+{"level":"info","event":"EnvLoad","userId":"","role":"","status":"info","message":".env loaded successfully","time":"2025-11-28T16:50:12+05:00","message":"EnvLoad"}
+{"level":"info","event":"DBConnect","userId":"","role":"","status":"info","message":"Database connection established","time":"2025-11-28T16:50:12+05:00","message":"DBConnect"}
+{"level":"info","event":"SeedAdmin","userId":"","role":"","status":"info","message":"Admin user ensured","time":"2025-11-28T16:50:12+05:00","message":"SeedAdmin"}
+{"level":"info","event":"ServerStart","userId":"","role":"","status":"info","port":8080,"time":"2025-11-28T16:50:12+05:00","message":"ServerStart"}
+{"level":"info","method":"GET","path":"/swagger/index.html","user_id":"guest","role":"guest","duration_ms":7.5838,"time":"2025-11-28T16:50:39+05:00","message":"Request completed"}
+{"level":"info","method":"GET","path":"/swagger-ui.css","user_id":"guest","role":"guest","duration_ms":100.8644,"time":"2025-11-28T16:50:40+05:00","message":"Request completed"}
+{"level":"info","method":"GET","path":"/swagger-ui-standalone-preset.js","user_id":"guest","role":"guest","duration_ms":116.5759,"time":"2025-11-28T16:50:40+05:00","message":"Request completed"}
+{"level":"info","method":"GET","path":"/swagger-ui-bundle.js","user_id":"guest","role":"guest","duration_ms":250.3982,"time":"2025-11-28T16:50:40+05:00","message":"Request completed"}
+{"level":"info","method":"GET","path":"/favicon-32x32.png","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-28T16:50:41+05:00","message":"Request completed"}
+{"level":"info","method":"GET","path":"/swagger/doc.json","user_id":"guest","role":"guest","duration_ms":17.8715,"time":"2025-11-28T16:50:41+05:00","message":"Request completed"}
+{"level":"info","event":"UserLogin","userId":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","status":"success","email":"admin@example.com","time":"2025-11-28T16:51:00+05:00","message":"UserLogin"}
+{"level":"info","method":"POST","path":"/login","user_id":"guest","role":"guest","duration_ms":166.816,"time":"2025-11-28T16:51:00+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/music/artists","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-28T16:51:54+05:00","message":"Request completed"}
+{"level":"info","event":"ListAllArtists","userId":"","role":"","status":"success","count":5,"time":"2025-11-28T16:51:54+05:00","message":"ListAllArtists"}
+{"level":"info","method":"GET","path":"/music/artists","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":12.2275,"time":"2025-11-28T16:51:54+05:00","message":"Request completed"}
+{"level":"info","event":"GetMusicByArtistID","userId":"","role":"","status":"success","artistId":"e9317a12-1862-468e-81ea-221452936fba","count":4,"time":"2025-11-28T16:52:18+05:00","message":"GetMusicByArtistID"}
+{"level":"info","method":"GET","path":"/music/artist/e9317a12-1862-468e-81ea-221452936fba","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":20.5048,"time":"2025-11-28T16:52:18+05:00","message":"Request completed"}
+{"level":"info","method":"POST","path":"/music","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":6.1939,"time":"2025-11-28T16:56:23+05:00","message":"Request completed"}
+{"level":"info","event":"CreateMusic","userId":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","status":"success","musicId":"34221e4b-9cc6-4b32-b799-7530f639fef7","title":"stringsong","time":"2025-11-28T16:56:41+05:00","message":"CreateMusic"}
+{"level":"info","method":"POST","path":"/music","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":221.0265,"time":"2025-11-28T16:56:41+05:00","message":"Request completed"}
+{"level":"info","event":"UpdateMusic","userId":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","status":"success","musicId":"34221e4b-9cc6-4b32-b799-7530f639fef7","time":"2025-11-28T16:59:20+05:00","message":"UpdateMusic"}
+{"level":"info","method":"PUT","path":"/music/34221e4b-9cc6-4b32-b799-7530f639fef7","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":20.4513,"time":"2025-11-28T16:59:20+05:00","message":"Request completed"}

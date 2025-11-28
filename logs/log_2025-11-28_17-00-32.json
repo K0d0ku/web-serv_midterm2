@@ -1,0 +1,10 @@
+{"level":"info","time":"2025-11-28T17:00:32+05:00","message":"Log rotated due to hour change"}
+{"level":"info","event":"DeleteMusic","userId":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","status":"success","musicId":"34221e4b-9cc6-4b32-b799-7530f639fef7","time":"2025-11-28T17:00:32+05:00","message":"DeleteMusic"}
+{"level":"info","method":"DELETE","path":"/music/34221e4b-9cc6-4b32-b799-7530f639fef7","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":9.169,"time":"2025-11-28T17:00:32+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/music/artist/34221e4b-9cc6-4b32-b799-7530f639fef7","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-28T17:04:07+05:00","message":"Request completed"}
+{"level":"info","event":"GetMusicByArtistID","userId":"","role":"","status":"success","artistId":"34221e4b-9cc6-4b32-b799-7530f639fef7","count":0,"time":"2025-11-28T17:04:07+05:00","message":"GetMusicByArtistID"}
+{"level":"info","method":"GET","path":"/music/artist/34221e4b-9cc6-4b32-b799-7530f639fef7","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":1.9223,"time":"2025-11-28T17:04:07+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/music/artist/e9317a12-1862-468e-81ea-221452936fba","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-28T17:04:20+05:00","message":"Request completed"}
+{"level":"info","event":"GetMusicByArtistID","userId":"","role":"","status":"success","artistId":"e9317a12-1862-468e-81ea-221452936fba","count":4,"time":"2025-11-28T17:04:20+05:00","message":"GetMusicByArtistID"}
+{"level":"info","method":"GET","path":"/music/artist/e9317a12-1862-468e-81ea-221452936fba","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":5.1169,"time":"2025-11-28T17:04:20+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/music/artist/e9317a12-1862-468e-81ea-221452936fba","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-28T18:31:27+05:00","message":"Request completed"}

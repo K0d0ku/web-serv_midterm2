@@ -94,10 +94,12 @@ func main() {
 	usersGroup.GET("", authHandler.ListAllUsers, mw.RoleMiddleware("Admin"))
 	usersGroup.GET("/:id", authHandler.GetUserByID, mw.RoleMiddleware("Admin", "Artist", "Listener"))
 	usersGroup.PUT("/:id", authHandler.UpdateUser, mw.RoleMiddleware("Admin", "Artist", "Listener"))
-	usersGroup.DELETE("/:id", authHandler.DeleteUser, mw.RoleMiddleware("Admin"))
+	//usersGroup.DELETE("/:id", authHandler.DeleteUser, mw.RoleMiddleware("Admin"))
+	usersGroup.DELETE("/:id", authHandler.DeleteUser)
 
 	musicGroup := e.Group("/music")
 	musicGroup.Use(mw.AuthMiddleware)
+	musicGroup.GET("/artist-data/:id", musicHandler.GetArtistByID)
 	musicGroup.GET("/search", musicHandler.Search)
 	musicGroup.GET("/artist/:artistId", musicHandler.GetMusicByArtistID)
 	musicGroup.GET("/artists", musicHandler.ListAllArtists)

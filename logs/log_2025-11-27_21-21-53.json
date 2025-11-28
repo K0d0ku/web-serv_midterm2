@@ -1,0 +1,21 @@
+{"level":"info","time":"2025-11-27T21:21:53+05:00","message":"Zerolog initialized"}
+{"level":"info","event":"AppStartup","userId":"","role":"","status":"info","message":"Initializing application","time":"2025-11-27T21:21:53+05:00","message":"AppStartup"}
+{"level":"info","event":"EnvLoad","userId":"","role":"","status":"info","message":".env loaded successfully","time":"2025-11-27T21:21:53+05:00","message":"EnvLoad"}
+{"level":"info","event":"DBConnect","userId":"","role":"","status":"info","message":"Database connection established","time":"2025-11-27T21:21:53+05:00","message":"DBConnect"}
+{"level":"info","event":"SeedAdmin","userId":"","role":"","status":"info","message":"Admin user ensured","time":"2025-11-27T21:21:53+05:00","message":"SeedAdmin"}
+{"level":"info","event":"ServerStart","userId":"","role":"","status":"info","port":8080,"time":"2025-11-27T21:21:53+05:00","message":"ServerStart"}
+{"level":"info","method":"GET","path":"/swagger/index.html","user_id":"guest","role":"guest","duration_ms":0.5426,"time":"2025-11-27T21:22:16+05:00","message":"Request completed"}
+{"level":"info","method":"GET","path":"/swagger-ui-bundle.js","user_id":"guest","role":"guest","duration_ms":3.0009,"time":"2025-11-27T21:22:16+05:00","message":"Request completed"}
+{"level":"info","method":"GET","path":"/swagger-ui-standalone-preset.js","user_id":"guest","role":"guest","duration_ms":1.0012,"time":"2025-11-27T21:22:16+05:00","message":"Request completed"}
+{"level":"info","method":"GET","path":"/swagger-ui.css","user_id":"guest","role":"guest","duration_ms":0.5109,"time":"2025-11-27T21:22:16+05:00","message":"Request completed"}
+{"level":"info","method":"GET","path":"/swagger/doc.json","user_id":"guest","role":"guest","duration_ms":1.0724,"time":"2025-11-27T21:22:17+05:00","message":"Request completed"}
+{"level":"info","method":"GET","path":"/favicon-32x32.png","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-27T21:22:17+05:00","message":"Request completed"}
+{"level":"info","event":"UserLogin","userId":"1919c271-eceb-455a-ac46-0c371664dbe4","role":"Listener","status":"success","email":"selin.yura@example.com","time":"2025-11-27T21:22:46+05:00","message":"UserLogin"}
+{"level":"info","method":"POST","path":"/login","user_id":"guest","role":"guest","duration_ms":89.0537,"time":"2025-11-27T21:22:46+05:00","message":"Request completed"}
+{"level":"info","method":"GET","path":"/music/artist-data/bcc13472-5dd0-4a5b-bd2f-67aacce5e39c","user_id":"1919c271-eceb-455a-ac46-0c371664dbe4","role":"Listener","duration_ms":3.7006,"time":"2025-11-27T21:23:16+05:00","message":"Request completed"}
+{"level":"info","method":"GET","path":"/swagger/index.html","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-27T21:24:14+05:00","message":"Request completed"}
+{"level":"info","method":"GET","path":"/swagger-ui.css","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-27T21:24:14+05:00","message":"Request completed"}
+{"level":"info","method":"GET","path":"/swagger-ui-bundle.js","user_id":"guest","role":"guest","duration_ms":1.5241,"time":"2025-11-27T21:24:14+05:00","message":"Request completed"}
+{"level":"info","method":"GET","path":"/swagger-ui-standalone-preset.js","user_id":"guest","role":"guest","duration_ms":3.5241,"time":"2025-11-27T21:24:14+05:00","message":"Request completed"}
+{"level":"info","method":"GET","path":"/swagger/doc.json","user_id":"guest","role":"guest","duration_ms":0.514,"time":"2025-11-27T21:24:15+05:00","message":"Request completed"}
+{"level":"info","method":"GET","path":"/favicon-32x32.png","user_id":"guest","role":"guest","duration_ms":0.5109,"time":"2025-11-27T21:24:15+05:00","message":"Request completed"}

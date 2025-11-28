@@ -1,0 +1,5 @@
+{"level":"info","time":"2025-11-28T22:26:25+05:00","message":"Log rotated due to hour change"}
+{"level":"info","event":"GetUserByID","userId":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","status":"success","id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","time":"2025-11-28T22:26:25+05:00","message":"GetUserByID"}
+{"level":"info","method":"GET","path":"/users/193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":20.5773,"time":"2025-11-28T22:26:25+05:00","message":"Request completed"}
+{"level":"info","event":"GetUserByID","userId":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","status":"success","id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","time":"2025-11-28T22:26:25+05:00","message":"GetUserByID"}
+{"level":"info","method":"GET","path":"/users/193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":5.2611,"time":"2025-11-28T22:26:25+05:00","message":"Request completed"}

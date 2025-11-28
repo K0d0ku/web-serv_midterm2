@@ -1,0 +1,44 @@
+{"level":"info","time":"2025-11-27T22:40:45+05:00","message":"Log rotated due to hour change"}
+{"level":"info","event":"UserLogin","userId":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","status":"success","email":"admin@example.com","time":"2025-11-27T22:40:45+05:00","message":"UserLogin"}
+{"level":"info","method":"POST","path":"/login","user_id":"guest","role":"guest","duration_ms":411.7991,"time":"2025-11-27T22:40:45+05:00","message":"Request completed"}
+{"level":"info","event":"GetGenreByID","userId":"","role":"","status":"success","id":"7596ac84-75f7-4e0d-b65d-816b354c9127","time":"2025-11-27T22:41:22+05:00","message":"GetGenreByID"}
+{"level":"info","method":"GET","path":"/genres/7596ac84-75f7-4e0d-b65d-816b354c9127","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":138.4352,"time":"2025-11-27T22:41:22+05:00","message":"Request completed"}
+{"level":"info","method":"GET","path":"/music/artist-data/bcc13472-5dd0-4a5b-bd2f-67aacce5e39c","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":7.917,"time":"2025-11-27T22:42:31+05:00","message":"Request completed"}
+{"level":"info","event":"GetMusicByArtistID","userId":"","role":"","status":"success","artistId":"bcc13472-5dd0-4a5b-bd2f-67aacce5e39c","count":4,"time":"2025-11-27T22:42:54+05:00","message":"GetMusicByArtistID"}
+{"level":"info","method":"GET","path":"/music/artist/bcc13472-5dd0-4a5b-bd2f-67aacce5e39c","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":24.8977,"time":"2025-11-27T22:42:54+05:00","message":"Request completed"}
+{"level":"info","event":"GetMusicByID","userId":"","role":"","status":"success","id":"32195060-2bf4-48bd-8b3c-8ea71c63c0a7","time":"2025-11-27T22:43:34+05:00","message":"GetMusicByID"}
+{"level":"info","method":"GET","path":"/music/32195060-2bf4-48bd-8b3c-8ea71c63c0a7","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":9.6454,"time":"2025-11-27T22:43:34+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/music/search","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-27T22:55:55+05:00","message":"Request completed"}
+{"level":"info","event":"Search","userId":"","role":"","status":"success","count":4,"query":"Ligon Deez","time":"2025-11-27T22:55:55+05:00","message":"Search"}
+{"level":"info","method":"GET","path":"/music/search","user_id":"18bed505-4862-452c-bec9-26acbd7af9eb","role":"Listener","duration_ms":20.5734,"time":"2025-11-27T22:55:55+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/music/search","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-27T22:56:09+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/music/search","user_id":"guest","role":"guest","duration_ms":0.5293,"time":"2025-11-27T22:56:09+05:00","message":"Request completed"}
+{"level":"info","event":"Search","userId":"","role":"","status":"success","count":4,"query":"ligon deez ","time":"2025-11-27T22:56:09+05:00","message":"Search"}
+{"level":"info","method":"GET","path":"/music/search","user_id":"18bed505-4862-452c-bec9-26acbd7af9eb","role":"Listener","duration_ms":18.1848,"time":"2025-11-27T22:56:09+05:00","message":"Request completed"}
+{"level":"info","event":"Search","userId":"","role":"","status":"success","count":4,"query":"ligon deez ","time":"2025-11-27T22:56:09+05:00","message":"Search"}
+{"level":"info","method":"GET","path":"/music/search","user_id":"18bed505-4862-452c-bec9-26acbd7af9eb","role":"Listener","duration_ms":30.0837,"time":"2025-11-27T22:56:09+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/music/search","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-27T22:56:14+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/music/search","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-27T22:56:14+05:00","message":"Request completed"}
+{"level":"info","event":"Search","userId":"","role":"","status":"success","count":4,"query":"ligon deez ","time":"2025-11-27T22:56:14+05:00","message":"Search"}
+{"level":"info","method":"GET","path":"/music/search","user_id":"18bed505-4862-452c-bec9-26acbd7af9eb","role":"Listener","duration_ms":51.1621,"time":"2025-11-27T22:56:14+05:00","message":"Request completed"}
+{"level":"info","event":"Search","userId":"","role":"","status":"success","count":4,"query":"ligon deez ","time":"2025-11-27T22:56:14+05:00","message":"Search"}
+{"level":"info","method":"GET","path":"/music/search","user_id":"18bed505-4862-452c-bec9-26acbd7af9eb","role":"Listener","duration_ms":19.7744,"time":"2025-11-27T22:56:14+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/music/search","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-27T22:59:07+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/music/search","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-27T22:59:07+05:00","message":"Request completed"}
+{"level":"info","event":"Search","userId":"","role":"","status":"success","count":4,"query":"ligon deez","time":"2025-11-27T22:59:07+05:00","message":"Search"}
+{"level":"info","method":"GET","path":"/music/search","user_id":"18bed505-4862-452c-bec9-26acbd7af9eb","role":"Listener","duration_ms":10.7659,"time":"2025-11-27T22:59:07+05:00","message":"Request completed"}
+{"level":"info","event":"Search","userId":"","role":"","status":"success","count":4,"query":"ligon deez","time":"2025-11-27T22:59:07+05:00","message":"Search"}
+{"level":"info","method":"GET","path":"/music/search","user_id":"18bed505-4862-452c-bec9-26acbd7af9eb","role":"Listener","duration_ms":20.3913,"time":"2025-11-27T22:59:07+05:00","message":"Request completed"}
+{"level":"info","event":"Search","userId":"","role":"","status":"success","count":4,"query":"ligon deez","time":"2025-11-27T22:59:11+05:00","message":"Search"}
+{"level":"info","method":"GET","path":"/music/search","user_id":"18bed505-4862-452c-bec9-26acbd7af9eb","role":"Listener","duration_ms":5.0157,"time":"2025-11-27T22:59:11+05:00","message":"Request completed"}
+{"level":"info","event":"Search","userId":"","role":"","status":"success","count":4,"query":"ligon deez","time":"2025-11-27T22:59:11+05:00","message":"Search"}
+{"level":"info","method":"GET","path":"/music/search","user_id":"18bed505-4862-452c-bec9-26acbd7af9eb","role":"Listener","duration_ms":18.3388,"time":"2025-11-27T22:59:11+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/music/search","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-27T22:59:45+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/music/search","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-27T22:59:45+05:00","message":"Request completed"}
+{"level":"info","event":"Search","userId":"","role":"","status":"success","count":4,"query":"ligon deez","time":"2025-11-27T22:59:49+05:00","message":"Search"}
+{"level":"info","method":"GET","path":"/music/search","user_id":"18bed505-4862-452c-bec9-26acbd7af9eb","role":"Listener","duration_ms":9.0915,"time":"2025-11-27T22:59:49+05:00","message":"Request completed"}
+{"level":"info","event":"Search","userId":"","role":"","status":"success","count":4,"query":"ligon deez","time":"2025-11-27T22:59:49+05:00","message":"Search"}
+{"level":"info","method":"GET","path":"/music/search","user_id":"18bed505-4862-452c-bec9-26acbd7af9eb","role":"Listener","duration_ms":27.2393,"time":"2025-11-27T22:59:49+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/music/search","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-27T23:00:15+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/music/search","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-27T23:00:15+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/music/search","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-27T23:00:42+05:00","message":"Request completed"}

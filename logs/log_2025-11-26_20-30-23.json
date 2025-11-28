@@ -1,0 +1,18 @@
+{"level":"info","time":"2025-11-26T20:30:23+05:00","message":"Log rotated due to hour change"}
+{"level":"info","event":"UserRegister","userId":"97365234-3d4b-470c-a368-b514b73adfe8","role":"Artist","status":"success","email":"ReactTestArtist@example.com","time":"2025-11-26T20:30:23+05:00","message":"UserRegister"}
+{"level":"info","method":"POST","path":"/register","user_id":"guest","role":"guest","duration_ms":127.3717,"time":"2025-11-26T20:30:23+05:00","message":"Request completed"}
+{"level":"info","event":"UserLogin","userId":"97365234-3d4b-470c-a368-b514b73adfe8","role":"Artist","status":"success","email":"ReactTestArtist@example.com","time":"2025-11-26T20:39:39+05:00","message":"UserLogin"}
+{"level":"info","method":"POST","path":"/login","user_id":"guest","role":"guest","duration_ms":103.307,"time":"2025-11-26T20:39:39+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/login","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-26T20:49:04+05:00","message":"Request completed"}
+{"level":"info","event":"UserLogin","userId":"97365234-3d4b-470c-a368-b514b73adfe8","role":"Artist","status":"success","email":"ReactTestArtist@example.com","time":"2025-11-26T20:49:04+05:00","message":"UserLogin"}
+{"level":"info","method":"POST","path":"/login","user_id":"guest","role":"guest","duration_ms":89.544,"time":"2025-11-26T20:49:04+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/login","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-26T20:49:29+05:00","message":"Request completed"}
+{"level":"info","event":"UserLogin","userId":"97365234-3d4b-470c-a368-b514b73adfe8","role":"Artist","status":"success","email":"ReactTestArtist@example.com","time":"2025-11-26T20:49:29+05:00","message":"UserLogin"}
+{"level":"info","method":"POST","path":"/login","user_id":"guest","role":"guest","duration_ms":99.9307,"time":"2025-11-26T20:49:29+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/login","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-26T20:52:34+05:00","message":"Request completed"}
+{"level":"info","event":"UserLogin","userId":"97365234-3d4b-470c-a368-b514b73adfe8","role":"Artist","status":"success","email":"ReactTestArtist@example.com","time":"2025-11-26T20:52:34+05:00","message":"UserLogin"}
+{"level":"info","method":"POST","path":"/login","user_id":"guest","role":"guest","duration_ms":99.5645,"time":"2025-11-26T20:52:34+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/login","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-26T20:54:17+05:00","message":"Request completed"}
+{"level":"info","event":"UserLogin","userId":"97365234-3d4b-470c-a368-b514b73adfe8","role":"Artist","status":"success","email":"ReactTestArtist@example.com","time":"2025-11-26T20:54:17+05:00","message":"UserLogin"}
+{"level":"info","method":"POST","path":"/login","user_id":"guest","role":"guest","duration_ms":84.8678,"time":"2025-11-26T20:54:17+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/login","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-26T21:05:06+05:00","message":"Request completed"}

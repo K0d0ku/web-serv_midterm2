@@ -90,6 +90,7 @@ func (h *AuthHandler) Login(c echo.Context) error {
 	logger.LogEvent("UserLogin", user.ID.String(), string(user.Role), "success", map[string]interface{}{"email": req.Email})
 
 	return c.JSON(http.StatusOK, echo.Map{
+		"userId":  user.ID.String(),
 		"token":   token,
 		"role":    user.Role,
 		"expires": time.Now().Add(24 * time.Hour),

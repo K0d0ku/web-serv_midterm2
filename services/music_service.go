@@ -20,9 +20,9 @@ type MusicService interface {
 	GetByGenre(genreID string) ([]models.Music, error)
 
 	GetAllArtists() ([]models.User, error)
-	GetArtistByName(name string) (*models.User, error)
 	GetByArtistID(artistID string) ([]models.Music, error)
 	Search(query string) ([]models.Music, error)
+	GetArtistByID(artistID string) (*models.User, error)
 }
 
 type musicService struct {
@@ -169,19 +169,6 @@ func (s *musicService) GetAllArtists() ([]models.User, error) {
 	return artists, nil
 }
 
-func (s *musicService) GetArtistByName(name string) (*models.User, error) {
-	musics, err := s.musicRepo.GetAll()
-	if err != nil {
-		return nil, err
-	}
-	for _, m := range musics {
-		if strings.EqualFold(m.Artist.Name, name) {
-			return &m.Artist, nil
-		}
-	} //unused for now
-	return nil, errors.New("artist not found")
-}
-
 func (s *musicService) GetByArtistID(artistID string) ([]models.Music, error) {
 	return s.musicRepo.GetByArtistID(artistID)
 }
@@ -192,4 +179,15 @@ func (s *musicService) Search(query string) ([]models.Music, error) {
 		return nil, errors.New("search query is empty")
 	}
 	return s.musicRepo.Search(query)
+}
+
+func (s *musicService) GetArtistByID(artistID string) (*models.User, error) {
+	artist, err := s.musicRepo.GetArtistByID(artistID)
+	if err != nil {
+		return nil, err
+	}
+	if artist == nil {
+		return nil, errors.New("artist not found or invalid role")
+	}
+	return artist, nil
 }

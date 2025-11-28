@@ -1,0 +1,6 @@
+{"level":"info","time":"2025-11-26T21:05:06+05:00","message":"Log rotated due to hour change"}
+{"level":"info","event":"UserLogin","userId":"97365234-3d4b-470c-a368-b514b73adfe8","role":"Artist","status":"success","email":"ReactTestArtist@example.com","time":"2025-11-26T21:05:06+05:00","message":"UserLogin"}
+{"level":"info","method":"POST","path":"/login","user_id":"guest","role":"guest","duration_ms":95.7757,"time":"2025-11-26T21:05:06+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/login","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-26T21:18:06+05:00","message":"Request completed"}
+{"level":"info","event":"UserLogin","userId":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","status":"success","email":"admin@example.com","time":"2025-11-26T21:18:06+05:00","message":"UserLogin"}
+{"level":"info","method":"POST","path":"/login","user_id":"guest","role":"guest","duration_ms":102.6218,"time":"2025-11-26T21:18:06+05:00","message":"Request completed"}

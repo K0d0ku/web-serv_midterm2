@@ -1,0 +1,16 @@
+{"level":"info","time":"2025-11-28T03:08:05+05:00","message":"Log rotated due to hour change"}
+{"level":"info","event":"GetAllMusic","userId":"","role":"","status":"success","count":16,"time":"2025-11-28T03:08:05+05:00","message":"GetAllMusic"}
+{"level":"info","method":"GET","path":"/music","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":14.514,"time":"2025-11-28T03:08:05+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/music/322652e9-8b48-4fc7-a8ee-ffec42ca50a3","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-28T03:08:14+05:00","message":"Request completed"}
+{"level":"info","event":"GetMusicByID","userId":"","role":"","status":"success","id":"322652e9-8b48-4fc7-a8ee-ffec42ca50a3","time":"2025-11-28T03:08:14+05:00","message":"GetMusicByID"}
+{"level":"info","method":"GET","path":"/music/322652e9-8b48-4fc7-a8ee-ffec42ca50a3","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":5.2881,"time":"2025-11-28T03:08:14+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/music/artists","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-28T03:09:38+05:00","message":"Request completed"}
+{"level":"info","event":"ListAllArtists","userId":"","role":"","status":"success","count":5,"time":"2025-11-28T03:09:38+05:00","message":"ListAllArtists"}
+{"level":"info","method":"GET","path":"/music/artists","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":2.8938,"time":"2025-11-28T03:09:38+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/music/artist-data/e9317a12-1862-468e-81ea-221452936fba","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-28T03:09:46+05:00","message":"Request completed"}
+{"level":"info","method":"GET","path":"/music/artist-data/e9317a12-1862-468e-81ea-221452936fba","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":1.2906,"time":"2025-11-28T03:09:46+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/music/artists","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-28T03:13:23+05:00","message":"Request completed"}
+{"level":"info","event":"ListAllArtists","userId":"","role":"","status":"success","count":5,"time":"2025-11-28T03:13:23+05:00","message":"ListAllArtists"}
+{"level":"info","method":"GET","path":"/music/artists","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":2.3573,"time":"2025-11-28T03:13:23+05:00","message":"Request completed"}
+{"level":"info","method":"OPTIONS","path":"/music/artist-data/bcc13472-5dd0-4a5b-bd2f-67aacce5e39c","user_id":"guest","role":"guest","duration_ms":0,"time":"2025-11-28T03:13:29+05:00","message":"Request completed"}
+{"level":"info","method":"GET","path":"/music/artist-data/bcc13472-5dd0-4a5b-bd2f-67aacce5e39c","user_id":"193a443d-0df8-4b1b-adfd-8fdc16f8a3a5","role":"Admin","duration_ms":1.9408,"time":"2025-11-28T03:13:29+05:00","message":"Request completed"}

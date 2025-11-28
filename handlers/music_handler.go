@@ -169,7 +169,7 @@ func (h *MusicHandler) DeleteGenre(c echo.Context) error {
 // @Failure 500 {object} map[string]interface{}
 // @Router /music/search [get]
 // @Security ApiKeyAuth
-func (h *MusicHandler) Search(c echo.Context) error {
+func (h *MusicHandler) Search(c echo.Context) error { //SQL wildcard pattern multi field search
 	query := c.QueryParam("q")
 
 	if query == "" {
@@ -393,4 +393,34 @@ func (h *MusicHandler) DeleteMusic(c echo.Context) error {
 
 	logger.LogEvent("DeleteMusic", currentUser.ID.String(), string(currentUser.Role), "success", map[string]interface{}{"musicId": id})
 	return c.JSON(http.StatusOK, echo.Map{"message": "Music deleted"})
+}
+
+// GetArtistByID godoc
+// @Summary Get artist data by ID
+// @Description Fetch artist info by ID, only valid if user is an Artist
+// @Tags 3Music
+// @Produce json
+// @Param id path string true "Artist ID"
+// @Success 200 {object} models.User
+// @Failure 400 {object} map[string]interface{}
+// @Failure 403 {object} map[string]interface{}
+// @Failure 404 {object} map[string]interface{}
+// @Router /music/artist-data/{id} [get]
+// @Security ApiKeyAuth
+func (h *MusicHandler) GetArtistByID(c echo.Context) error {
+	artistID := c.Param("id")
+
+	if _, err := uuid.Parse(artistID); err != nil {
+		return c.JSON(http.StatusBadRequest, echo.Map{"message": "Invalid artist ID"})
+	}
+
+	artist, err := h.MusicService.GetArtistByID(artistID)
+	if err != nil {
+		if err.Error() == "artist not found or invalid role" {
+			return c.JSON(http.StatusForbidden, echo.Map{"message": "ID does not belong to an artist"})
+		}
+		return c.JSON(http.StatusInternalServerError, echo.Map{"message": "Failed to fetch artist"})
+	}
+
+	return c.JSON(http.StatusOK, artist)
 }
