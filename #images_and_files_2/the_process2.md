@@ -2,6 +2,10 @@
 ___Update: Dont worry i excluded the `.gitignore` on purpose cause i wanted to show the [.env](https://github.com/K0d0ku/web-serv_midterm2/blob/main/.env), [swagger docs](https://github.com/K0d0ku/web-serv_midterm2/tree/main/docs) and [logs](https://github.com/K0d0ku/web-serv_midterm2/tree/main/logs) on purpose___  
 ___
 
+___Update: uh i fucked up, this documentation had a whole Update section for front end, but it somehow got erased, ive tried every known way to revert what happend, but i couldnt, and in addition i could not find the commit history that did those changes, and even where i have added the Update section, so here is the link for the [front end:](https://github.com/K0d0ku/client-serv_midterm1-2?tab=readme-ov-file#midterm-2)___ 
+___
+
+
 ## in here i show my process/progress in the making of this project and fulfilling its requirements  
 !!! The list of **_Tools_** and **_Packages_** are listed in [README.md](https://github.com/K0d0ku/web-serv_midterm2/blob/main/README.md), and previous process can be seen in [the_process.md](https://github.com/K0d0ku/web-serv_midterm1/blob/master/%23images_and_files/the_process.md)  
   
